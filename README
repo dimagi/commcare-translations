@@ -1,0 +1,3 @@
+This repository stores translations for all the text strings that appear in CommCare.
+
+The translations for language with language code "xy" should be in a file named "message_xy.txt".
