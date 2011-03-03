@@ -7,7 +7,7 @@ polish.command.mark=Marcar
 polish.command.unmark=Desmarcar
 polish.date.select=Selecione a Data
 # for deleting a single char:
-polish.command.delete=Excluir
+polish.command.delete=Eliminar
 # for deleting a complete TextField:
 polish.command.clear=Limpar
 # for hiding menus on BlackBerry devices:
@@ -43,7 +43,7 @@ polish.predictive.wordNotFound=Palavra não encontrada
 
 polish.predictive.setup.title=Instalação assistida
 polish.predictive.setup.info=Instalando o dicionário usado para entrada de previsão. Aguarde um momento ...
-polish.predictive.setup.status.delete=Excluindo a instalação anterior ...
+polish.predictive.setup.status.delete=Eliminando a instalação anterior ...
 polish.predictive.setup.status.install=Instalando ...
 polish.predictive.setup.status.finished=Terminou,Por favor pressione sair...
 polish.predictive.setup.cancel=Você realmente deseja cancelar a instalação? Isso pode resultar em efeitos indesejáveis.
@@ -74,7 +74,7 @@ menu.Camera=Câmera
 menu.Recorder=Gravador
 menu.ImageManagement=Gerenciamento da Imagem
 menu.ViewSaved=Ver Formulários Guardados
-menu.Delete=Excluir
+menu.Delete=Eliminar
 menu.ShareForms=Partilhar Formulários
 menu.Settings=Configurações
 menu.SaveAndExit=Guardar e Sair
@@ -121,7 +121,7 @@ question.SendNow=Enviar dados agora?
 view.sending.SendStatus=Enviar o estado
 view.sending.SendingInProgress=Enviando ...
 view.sending.SuccessfullyTransmitted=Formulario transmitido com sucesso 
-view.sending.CurrentlySending=\nAtualmente Enviar Formulário
+view.sending.CurrentlySending=\nAtualmente a Enviar Formulário
 view.sending.SuccessfullySubmitted=Formulário foi submetido com sucesso! Sua referência é: 
 view.sending.SubmissionFailed=Submissão falhou! Por favor, tente submeter o formulário novamente mais tarde em \'Ver guardados \'.
 view.sending.SubmissionTakingLong=O envio está levando muito tempo, pode verificar o estado e/ou reenviar depois em \'Exibir guardado \'
@@ -216,7 +216,7 @@ Resolve= Resolve
 ReferralFor= Encaminhamento para 
 Back= Voltar
 Camera= Câmera
-Delete= Excluir
+Delete= Eliminar
 FormNotLoaded= Formulário não carregado
 
 Exit= Sair
@@ -261,7 +261,7 @@ sending.status.long=Envio muito demorado
 sending.status.success=Enviado com sucesso
 sending.status.failed=Falha de autenticação
 sending.status.error=Apresentação Erro desconhecido
-sending.status.didnotunderstand=Não entendeu a resposta do servidor [${0}]
+sending.status.didnotunderstand=Não foi entidada a resposta do servidor [${0}]
 
 menu.transport=Menu de transporte
 Settings= Configurações
@@ -355,7 +355,7 @@ date.unknown=desconhecido
 
 log.submit.url=Regito de URL para log
 log.submit.never=Desativar o envio automático
-log.submit.short=Enviar o log Dispositivo
+log.submit.short=Enviar o log do Dispositivo
 log.submit.full=Enviar diagnóstico completo
 log.submit.nigthly=Formato de log noturno
 log.submit.weekly=Formato de log semanal
