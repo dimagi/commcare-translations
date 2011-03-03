@@ -55,9 +55,9 @@ polish.predictive.setup.cmd.no=Não
 
 #Javarosa-specific
 
-plussign=/adicionar.png
-question=/Pergunta.png
-questioncompulsory=/questão obrigatória.png
+plussign=/add.png
+question=/question.png
+questioncompulsory=/questioncompulsory.png
 
 splashscreen=/splash.png
 
@@ -121,10 +121,10 @@ question.SendNow=Enviar dados agora?
 view.sending.SendStatus=Enviar o estado
 view.sending.SendingInProgress=Enviando ...
 view.sending.SuccessfullyTransmitted=Formulario transmitido com sucesso 
-view.sending.CurrentlySending=\Atualmente Enviar Formulário
+view.sending.CurrentlySending=\nAtualmente Enviar Formulário
 view.sending.SuccessfullySubmitted=Formulário foi submetido com sucesso! Sua referência é: 
-view.sending.SubmissionFailed=Apresentação falhou! Por favor, tente submeter o formulário novamente mais tarde em \ "Ver salvos \ '.
-view.sending.SubmissionTakingLong=O envio está tomando muito tempo, você pode verificar o status e / ou reenviar depois em \ "Exibir salvo \ '
+view.sending.SubmissionFailed=Apresentação falhou! Por favor, tente submeter o formulário novamente mais tarde em \'Ver salvos \'.
+view.sending.SubmissionTakingLong=O envio está tomando muito tempo, você pode verificar o status e/ou reenviar depois em \'Exibir salvo\'
 view.sending.SubmissionErrorUnknown=Erro ao enviar desconhecido; formulário não foi enviado!
 view.sending.CompulsoryQuestionsIncomplete=Há perguntas sem resposta obrigatória e deve ser concluída primeiro antes de avançar
 view.sending.CompulsoryQuestionIncomplete=Esta pergunta é obrigatória. Por favor, responda-o antes de continuar.
