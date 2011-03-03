@@ -1,4 +1,4 @@
-polish.command.ok=OK
+﻿polish.command.ok=OK
 polish.command.cancel=Cancelar
 polish.command.options=Opções
 polish.command.exit=Sair
@@ -69,26 +69,26 @@ menu.ViewOpen=Ver casos abertos
 menu.Resolve=Resolver o caso
 menu.Save=Guardar
 menu.Exit=Sair
-menu.GetNewForms=Obter Novas Formas
+menu.GetNewForms=Obter Novos Formulários
 menu.Camera=Câmera
 menu.Recorder=Gravador
 menu.ImageManagement=Gerenciamento da Imagem
 menu.ViewSaved=Ver Formulários Guardados
 menu.Delete=Excluir
-menu.ShareForms=Formas de ações
+menu.ShareForms=Partilhar Formulários
 menu.Settings=Configurações
-menu.SaveAndExit=Salvar e Sair
+menu.SaveAndExit=Guardar e Sair
 menu.SendForm=Enviar o formulário
 menu.Next=Seguinte
 menu.Back=Voltar
-menu.ViewAnswers=Respostas Vista
+menu.ViewAnswers=Ver Resostas
 menu.SendNow=Enviar Agora
-menu.SendLater=Enviar mais tarde (Salvar)
+menu.SendLater=Enviar mais tarde (Guardar)
 menu.SendToNewServer=Enviar para o novo servidor
-menu.Scan=Digitalizar
+menu.Scan=Scan
 menu.SendData=Enviar dados
 menu.send.all=Enviar todas as mensagens não enviadas
-menu.send.all.val=Enviar todas as mensagens não enviadas ($ {0})
+menu.send.all.val=Enviar todas as mensagens não enviadas ($0})
 menu.sync=Sincronização com o Servidor
 menu.Edit=Editar
 menu.Review=Revisão
@@ -111,7 +111,7 @@ title.FormsList=Lista de formulários
 title.Login=Entrar
 title.SavedForms=Dados dos Formulários
 
-chatterbox.button.next=Feito
+chatterbox.button.next=Concluido
 button.Next=VOLGENDE
 button.Yes=SIM
 button.No=NÃO
@@ -123,9 +123,9 @@ view.sending.SendingInProgress=Enviando ...
 view.sending.SuccessfullyTransmitted=Formulario transmitido com sucesso 
 view.sending.CurrentlySending=\nAtualmente Enviar Formulário
 view.sending.SuccessfullySubmitted=Formulário foi submetido com sucesso! Sua referência é: 
-view.sending.SubmissionFailed=Apresentação falhou! Por favor, tente submeter o formulário novamente mais tarde em \'Ver salvos\'.
-view.sending.SubmissionTakingLong=O envio está tomando muito tempo, você pode verificar o status e/ou reenviar depois em \'Exibir salvo\'
-view.sending.SubmissionErrorUnknown=Erro ao enviar desconhecido; formulário não foi enviado!
+view.sending.SubmissionFailed=Submissão falhou! Por favor, tente submeter o formulário novamente mais tarde em \'Ver guardados \'.
+view.sending.SubmissionTakingLong=O envio está levando muito tempo, pode verificar o estado e/ou reenviar depois em \'Exibir guardado \'
+view.sending.SubmissionErrorUnknown=Erro ao enviar desconhecido; formulário não foi enviado!	
 view.sending.CompulsoryQuestionsIncomplete=Há perguntas sem resposta obrigatória e deve ser concluída primeiro antes de avançar
 view.sending.CompulsoryQuestionIncomplete=Esta pergunta é obrigatória. Por favor, responda-o antes de continuar.
 view.sending.FormUneditable=Você não pode editar as suas respostas ao rever a forma
@@ -137,43 +137,43 @@ view.sending.endOfSendingMessage=
 
  
 
-prop.healthunit=Unidade de Saúde
-prop.healthunitcode=Código Sanitário da Unidade
+prop.healthunit=Unidade Sanitária
+prop.healthunitcode=Código da Unidade Sanitária
 prop.subcounty=Sub Concelho
 prop.district=Distrito
 prop.hsd=HSD
-prop.finyear=Anos de Exercício
+prop.finyear=Ano Financeiro
 
 form.property.url=URL:
 
-form.login.commcareversion=Versão CommCare
-form.login.buildnumber=Número da compilação
+form.login.commcareversion=Versão doCommCare
+form.login.buildnumber=Número de Build
 form.login.username=Nome de usuário:
 form.login.password=Senha:
 form.login.login=Iniciar sessão
 form.login.login.successful=Iniciar sessão com êxito
 form.login.loading.profile=Carregando o seu perfil
 
-activity.login.loginincorrect=Iniciar sessão incorreto
+activity.login.loginincorrect=Credenciais de acesso incorrectas
 activity.login.tryagain=Por favor, tente novamente
-activity.login.demomode=Demonstração de Modalidade
-activity.login.demomode.intro=Vocês estão começando CommCare no modo Demonstração. Modo de Demonstração é para testar e só a prática! Faça o login com sua conta de usuário para realizar visitas a clientes.
+activity.login.demomode=Modoe de Demonstração 
+activity.login.demomode.intro=Vocês a iniciar o  CommCare no modo Demonstração. Modo de Demonstração é para testar e só a prática! Faça o login com sua conta de usuário para realizar visitas a pacientes.
 
 
 form.user.name=Nome (ie: EntrarID):
 form.user.password=Senha do usuário:
 form.user.confirmpassword=Confirme sua senha:
 form.user.userid=Utilizador de identificação:
-form.user.giveadmin=Dar este usuário direitos de administrador?
+form.user.giveadmin=Dar a este usuário direitos de administrador?
 form.user.fillinboth =Por favor, preencha os nome de usuário e a senha
-form.user.reenterpasswords=Por favor reintroduza a sua senha, a senha e a caixa de confirmação de senha não correspondem
-form.user.usernametaken=Nome de usuário $ {0} já tomadas. Por favor, escolha outro nome
+form.user.reenterpasswords=Por favor reintroduza a sua senha, a senha e a  confirmação de senha não correspondem
+form.user.usernametaken=Nome de usuário ${0} já utilizado. Por favor, escolha outro nome
 
 activity.adduser.adduser=Adicionar usuário
 activity.adduser.useradded=Usuário adicionado 
 activity.adduser.useraddedsucc=Usuário adicionado com sucesso
 activity.adduser.problem=Problema:
-activity.adduser.problem.nametaken=Nome de usuário $ {0} já tomadas. Por favor, escolha outro nome
+activity.adduser.problem.nametaken=Nome de usuário ${0} já utilizado. Por favor, escolha outro nome
 activity.adduser.problem.emptyuser=Nome de usuário e senha deve ser dados ambos
 activity.adduser.problem.mismatchingpasswords=As senhas não correspondem
 
@@ -191,14 +191,14 @@ activity.locationcapture.LocationError=Localização de erro
 activity.locationcapture.GPSNotAvailable=GPS não está disponível
 activity.locationcapture.capturelocationhint=Use o GPS para obter a localização
 
-formreview.period.select=Selecione período em análise
-formreview.period.today=Entrou hoje
-formreview.period.yesterday=Ontem Digitado
-formreview.period.week.this=Entrou esta semana
-formreview.period.week.last=Introduzido Última Semana
+formreview.period.select=Selecione o período a rever
+formreview.period.today=Dados introduzidos  Hoje	
+formreview.period.yesterday=Dados intruduzidos Ontem
+formreview.period.week.this=Introduzidos esta semana
+formreview.period.week.last=Introduzidos semana passada
 
-formview.repeat.addNew=Adicionar repetir de novo?
-formview.CompulsoryQuestionIncomplete=Esta pergunta é obrigatória. Por favor, responda-o antes de continuar.
+formview.repeat.addNew=Adicionar  novo?
+formview.CompulsoryQuestionIncomplete=Esta pergunta é obrigatória. Por favor, responda antes de continuar.
 
 activity.edituser.edituser=Editar Usuário
 
@@ -207,10 +207,10 @@ household.visit=Visita domiciliar
 household.id=Identificação do agregado
 NewBirth=Novo Nascimento
 
-PendingReferrals= Pendentes Referências
+PendingReferrals= Encaminhamentos pendentes
 Today= Hoje
 Yesterday= Ontem
-NoPendingReferrals= Nenhuma referência de Pendentes
+NoPendingReferrals= Nenhuma encaminhamento  pendente
 Select= Selecione
 Resolve= Resolve
 ReferralFor= Encaminhamento para 
@@ -221,7 +221,7 @@ FormNotLoaded= Formulário não carregado
 
 Exit= Sair
 GetNewForms= Obter Novos Formulários
-ImageManagement= Gerenciamento da Imagem
+ImageManagement= Gerenciamento de Imagens
 menu.ok=OK
 
 date=Data
@@ -241,7 +241,7 @@ sending.view.later=Enviar mais tarde
 sending.view.when=Enviar Dados Agora
 sending.view.new=Enviar para o novo servidor
 
-sending.status.multi=Atualmente o envio de $ {0} de $ {1}. Transmitida com sucesso $ {2} de $ {3}.
+sending.status.multi=Atualmente o envio de ${0} de ${1}. Transmitido com sucesso ${2} de ${3}.
 sending.status.title=Enviar o Estado
 sending.status.none=Nenhum Formulário para enviar
 sending.status.going=Envio em andamento
@@ -256,24 +256,24 @@ message.delete=Apagar Mensagem
 
 debug.log=registo de depuração
 
-sending.status.failures=Ocorreram alguns erros, $ {0} formulários nao foram enviados
-sending.status.long=Apresentação demorando muito
+sending.status.failures=Ocorreram alguns erros, ${0} formulários nao foram enviados
+sending.status.long=Envio muito demorado
 sending.status.success=Enviado com sucesso
 sending.status.failed=Falha de autenticação
 sending.status.error=Apresentação Erro desconhecido
-sending.status.didnotunderstand=Não entendeu a resposta do servidor [$ {0}]
+sending.status.didnotunderstand=Não entendeu a resposta do servidor [${0}]
 
 menu.transport=Menu de transporte
 Settings= Configurações
-ViewSaved=Ver salvos
+ViewSaved=Ver guardados
 
 
 date.today=Hoje
 date.yesterday=Ontem
-date.twoago=$ {0} dias atrás
+date.twoago=${0} dias atrás
 date.tomorrow=Amanhã
-date.nago=$ {0} dias atrás
-date.nfromnow=$ {0} dias de hoje
+date.nago=${0} dias atrás
+date.nfromnow=${0} dias de hoje
 
 pregnancy.edd.approaching=Aproximando
 yes=Sim
@@ -306,9 +306,9 @@ id=Namba
 
 user.registration.title=Registro de Usuário
 user.registration.attempt=Contactando servidor para registrar ... Usuário
-user.registration.failmessage=O registro do usuário não pôde ser concluída, o servidor não pôde ser contatado. Tentativa de repetição?
+user.registration.failmessage=O registro do usuário não pôde ser concluído, o servidor não pôde ser contatado. Tentar de novo?
 user.registration.success=Usuário registrado com sucesso!
-user.registration.badresponse=Registro de Usuário Recebido, mas a resposta não poderia ser reconhecido. Continuar?
+user.registration.badresponse=Registro de Usuário Recebido, mas a resposta não pode ser reconhecida. Continuar?
 
 command.retry=Tentar novamente
 
@@ -323,16 +323,16 @@ command.cancel=Cancelar
 #Chatterbox commands
 command.next=Seguinte
 command.exit=Sair
-command.saveexit=Salvar e Sair
+command.saveexit=Guardar e Sair
 command.save=Guardar
 command.language=Idioma
 
 chatterbox.button.trigger=Ok
 
-entity.command.sort=Classificar
+entity.command.sort=Ordenar
 entity.find=Pesquisar: 
 entity.nomatch=Nenhum corresponde
-entity.detail.title=Detalhe $ {0}
+entity.detail.title=Detalhe ${0}
 entity.sort.title=Ordenar por ...
 
 case.title=Selecione Ação
@@ -353,18 +353,18 @@ yes=Sim
 no=Não
 date.unknown=desconhecido
 
-log.submit.url=enviar registro URL
+log.submit.url=Regito de URL para log
 log.submit.never=Desativar o envio automático
-log.submit.short=Enviar o registro do Dispositivo
+log.submit.short=Enviar o log Dispositivo
 log.submit.full=Enviar diagnóstico completo
-log.submit.nigthly=formato de registro noturno
-log.submit.weekly=formato de registro semanal
-log.submit.next.daily=Em seguida registo diário
-log.submit.next.weekly=registro da semana seguinte 
+log.submit.nigthly=Formato de log noturno
+log.submit.weekly=Formato de log semanal
+log.submit.next.daily= Registo diário no dia Seguinte
+log.submit.next.weekly=Registro semanal na semana seguinte 
 
 user.create.header=Novo Usuário
 
-sending.status.success=Submetido com êxito. Hoje temos recebido US $ {0} formulários de você.
+sending.status.success=Submetido com êxito. Hoje recebemos ${0} formulários seus.
 sending.status.problem.datasafe=Submetido com êxito. Seus dados estão seguros, mas cometeu um pequeno erro. Nós estamos trabalhando nisso.
 
 user.entity.name=Usuário
@@ -376,8 +376,8 @@ user.entity.demo=Demonstração
 user.entity.unknown=Desconhecido
 
 repeat.repitition=repetição
-repeat.message.single=Adicionar $ {0}?
-repeat.message.multiple=Adicionar mais US $ {0}?
+repeat.message.single=Adicionar ${0}?
+repeat.message.multiple=Adicionar mais ${0}?
 
 #List of two-letter->Language Mappings
 en=Inglês
