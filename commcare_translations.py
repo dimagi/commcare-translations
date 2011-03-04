@@ -13,6 +13,8 @@ def load(f):
         line = re.split(r'(?<!\\)#', line)[0] # strip comments starting with '#', ignoring '\#'
         line = line.strip()
         if not line: continue
+        if not isinstance(line, unicode):
+            line = unicode(line, encoding='utf8')
         i = line.index('=')
         messages[line[:i].strip()] = line[i+1:].strip()
     return messages
@@ -28,5 +30,5 @@ def load_translations(lang):
 def dumps(dct):
     io = StringIO()
     for key,val in dct.items():
-        print >> io, "{key}={val}".format(key=key, val=val)
-    return io.getvalue()
+        print >> io, u"{key}={val}".format(key=key, val=val).encode('utf8')
+    return unicode(io.getvalue(), encoding='utf8')

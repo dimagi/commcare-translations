@@ -112,9 +112,9 @@ title.Login=Entrar
 title.SavedForms=Dados dos Formulários
 
 chatterbox.button.next=Concluido
-button.Next=VOLGENDE
-button.Yes=SIM
-button.No=NÃO
+button.Next=Próxima
+button.Yes=Sim
+button.No=Não
 
 question.SendNow=Enviar dados agora?
 
