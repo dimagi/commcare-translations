@@ -388,3 +388,7 @@ af=Afrikaans
 
 #OQPS Messages
 formentry.triggertitle=Message
+
+# CommCare HQ
+cchq.case=Case
+cchq.referral=Referral
