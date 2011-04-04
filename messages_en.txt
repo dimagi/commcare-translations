@@ -112,9 +112,9 @@ title.Login=Login
 title.SavedForms=Saved Forms
 
 chatterbox.button.next=Done
-button.Next=VOLGENDE
-button.Yes=YES
-button.No=NO
+button.Next=Next
+button.Yes=Yes
+button.No=No
 
 question.SendNow=Send data now?
 
