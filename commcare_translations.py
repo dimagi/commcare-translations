@@ -29,6 +29,6 @@ def load_translations(lang):
 
 def dumps(dct):
     io = StringIO()
-    for key,val in dct.items():
+    for key,val in sorted(dct.items()):
         print >> io, u"{key}={val}".format(key=key, val=val).encode('utf8')
     return unicode(io.getvalue(), encoding='utf8')
