@@ -20,6 +20,9 @@ def load(f):
     return messages
 
 def load_translations(lang):
+    # pt => por: hack for backwards compatibility
+    if lang == 'pt': lang = 'por'
+    
     path = normpath(join(__file__, '../messages_{lang}.txt'.format(lang=lang)))
     try:
         with open(path) as f:
