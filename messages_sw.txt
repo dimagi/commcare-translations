@@ -190,6 +190,9 @@ Recorder= Recorder
 Settings= Mpangilio 
 
 menu.ok=Sawa
+
+sending.view.done.title=Finished
+sending.view.done=Form Complete, thanks!
 sending.view.submit=Tuma  Fomu
 sending.view.now=Tuma sasa
 sending.view.later=Tuma baadae

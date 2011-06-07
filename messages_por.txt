@@ -235,6 +235,8 @@ model.time.long=Tempo Introduzido
 Recorder= Gravador
 SendDataNow= Enviar Dados Agora
 
+sending.view.done.title=Terminou
+sending.view.done=Formulário Completo, obrigado!
 sending.view.submit=Enviar Formulário
 sending.view.now=Enviar Agora
 sending.view.later=Enviar mais tarde
