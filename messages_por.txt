@@ -392,5 +392,5 @@ af=Afrikaans
 formentry.triggertitle=Mensagem
 
 # CommCare HQ
-cchq.case=Processo
-cchq.referral=Encaminhamento
+cchq.case=Processos
+cchq.referral=Encaminhamentos
