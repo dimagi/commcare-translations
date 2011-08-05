@@ -28,73 +28,24 @@ polish.command.back=Back
 polish.rss.command.select=Show
 polish.rss.command.followlink=Go
 
-# used for predictive setup
-polish.predictive.command.enable=Enable Predictive Input
-polish.predictive.command.disable=Disable Predictive Input
-polish.predictive.command.install=Install Predictive Input
-polish.predictive.registerNewWord.label=New Word: 
-polish.predictive.registerNewWord.command=Add New Word
-polish.predictive.download.title=Predictive Text
-polish.predictive.download.message=The predictive dictionary  could not be found or has the wrong version. Press OK to exit the application and download the dictionary.
-polish.predictive.local.title=Predictive Text
-polish.predictive.local.message=The predictive dictionary has the wrong version or could not be found. Press OK to install the dictionary.
-polish.predictive.title=Predictive Input
-polish.predictive.wordNotFound=Word not found
 
-polish.predictive.setup.title=Predictive Setup
-polish.predictive.setup.info=Installing the dictionary used for predictive input. Please wait a moment ...
-polish.predictive.setup.status.delete=Deleting previous installation ...
-polish.predictive.setup.status.install=Installing ...
-polish.predictive.setup.status.finished=Finished, please press exit ...
-polish.predictive.setup.cancel=Do you really want to cancel the installation? This may result in unwanted effects.
-polish.predictive.setup.error=An error has occured:
-polish.predictive.setup.cmd.cancel=Cancel
-polish.predictive.setup.cmd.exit=Exit
-polish.predictive.setup.cmd.yes=Yes
-polish.predictive.setup.cmd.no=No
 
 #Javarosa-specific
 
 plussign=/add.png
-question=/question.png
-questioncompulsory=/questioncompulsory.png
 
 splashscreen=/splash.png
 
-
-menu.NewCase=New Case
-menu.FollowUp=Follow Up Visit
-menu.Referral=Follow Up on Referral
-menu.ViewOpen=View Open Cases
-menu.Resolve=Resolve Case
 menu.Save=Save
 menu.Exit=Exit
-menu.GetNewForms=Get New Forms
-menu.Camera=Camera
-menu.Recorder=Recorder
-menu.ImageManagement=Image Management
-menu.ViewSaved=View Saved Forms
-menu.Delete=Delete
-menu.ShareForms=Share Forms
 menu.Settings=Settings
 menu.SaveAndExit=Save and Exit
-menu.SendForm=Send form
 menu.Next=Next
 menu.Back=Back
 menu.ViewAnswers=View Answers
 menu.SendNow=Send Now
 menu.SendLater=Send Later (Save)
 menu.SendToNewServer=Send to new server
-menu.Scan=Scan
-menu.SendData=Send Data
-menu.send.all=Send All Unsent
-menu.send.all.val=Send All Unsent (${0})
-menu.sync=Sync with Server
-menu.Edit=Edit
-menu.Review=Review
-menu.Refresh=Refresh
-menu.MessageStatus=Message Status
-menu.Empty=Empty
 menu.Login=Login
 menu.Demo=Demo
 menu.Capture=Capture
@@ -102,62 +53,27 @@ menu.retry=Retry
 
 settings.language=Language
 
-view.loading=Loading
 
-hint.TypeOrScan=Type in you answer, or choose Scan to scan the barcode
 
-title.ScanBarcode=Scan barcode
-title.FormsList=Forms List
-title.Login=Login
-title.SavedForms=Saved Forms
 
-chatterbox.button.next=Done
-button.Next=Next
-button.Yes=Yes
-button.No=No
+button.Next=Done
+button.No=NO
 
 question.SendNow=Send data now?
 
-view.sending.SendStatus=Send Status
-view.sending.SendingInProgress=Sending...
-view.sending.SuccessfullyTransmitted=Succesfully Transmitted Form 
-view.sending.CurrentlySending=\nCurrently Sending Form
-view.sending.SuccessfullySubmitted=Form has been submitted successfully! Your reference is:  
-view.sending.SubmissionFailed=Submission failed! Please try to submit the form again later in \'View Saved\'.
-view.sending.SubmissionTakingLong=Sending is taking a long time; you may check on the status and/or resend later in \'View Saved\'
-view.sending.SubmissionErrorUnknown=Unknown sending error; form not sent!
-view.sending.CompulsoryQuestionsIncomplete=There are unanswered compulsory questions and must be completed first to proceed
-view.sending.CompulsoryQuestionIncomplete=This question is compulsory. Please answer it to continue.
-view.sending.FormUneditable=You cannot edit your answers when reviewing the form
-view.sending.RequiredQuestion=Required question; You must answer
-view.sending.of=of
-view.sending.ok=ok
-# inaenda in swahili
-view.sending.endOfSendingMessage=
+view.sending.RequiredQuestion=Required question. Please answer it to continue
 
  
 
-prop.healthunit=Health Unit
-prop.healthunitcode=Health Unit Code
-prop.subcounty=Subcounty
-prop.district=District
-prop.hsd=HSD
-prop.finyear=Financial Year
 
-form.property.url=URL:
 
-form.login.commcareversion=CommCare Version
-form.login.buildnumber=Build Number
 form.login.username=Username:
 form.login.password=Password:
 form.login.login=Login
-form.login.login.successful=Login successful
-form.login.loading.profile=Loading your Profile
 
-activity.login.loginincorrect=Login incorrect
 activity.login.tryagain=Please try again
-activity.login.demomode=Demo Mode
 activity.login.demomode.intro=You are starting CommCare in Demo mode. Demo mode is for testing and practice only! Log in with your user account to perform client visits.
+activity.login.loginincorrect=Login incorrect
 
 
 form.user.name=Name (ie: loginID):
@@ -166,12 +82,8 @@ form.user.confirmpassword=Confirm Password:
 form.user.userid=User ID:
 form.user.giveadmin=Give this user admin rights?
 form.user.fillinboth =Please fill in both username and password
-form.user.reenterpasswords=Please re-enter your password, the password and password confirmation box did not match
-form.user.usernametaken=Username ${0} already taken. Please choose another username
 
 activity.adduser.adduser=Add User
-activity.adduser.useradded=User added 
-activity.adduser.useraddedsucc=User added successfully
 activity.adduser.problem=Problem:
 activity.adduser.problem.nametaken=Username ${0} already taken. Please choose another username
 activity.adduser.problem.emptyuser=Username and password must both be given
@@ -187,53 +99,19 @@ activity.locationcapture.Latitude=Latitude
 activity.locationcapture.Longitude=Longitude
 activity.locationcapture.Altitude=Altitude
 activity.locationcapture.Accuracy=Accuracy
+activity.locationcapture.capturelocationhint=Use a GPS to get location
 activity.locationcapture.LocationError=Location Error
 activity.locationcapture.GPSNotAvailable=GPS Not Available
-activity.locationcapture.capturelocationhint=Use a GPS to get location
 
-formreview.period.select=Select Review Period
-formreview.period.today=Entered Today
-formreview.period.yesterday=Entered Yesterday
-formreview.period.week.this=Entered This Week
-formreview.period.week.last=Entered Last Week
 
 formview.repeat.addNew=Add new repeat?
-formview.CompulsoryQuestionIncomplete=This question is compulsory. Please answer it to continue.
 
-activity.edituser.edituser=Edit User
 
-Pregnancy=Pregnancy
-household.visit=Household Visit
-household.id=Household ID
-NewBirth=New Birth
 
-PendingReferrals= PendingReferrals
-Today= Today
-Yesterday= Yesterday
-NoPendingReferrals= No Pending Referrals
-Select= Select
-Resolve= Resolve
-ReferralFor= Referral For 
-Back= Back
-Camera= Camera
-Delete= Delete
-FormNotLoaded= Form Not Loaded
 
-Exit= Exit
-GetNewForms= Get New Forms
-ImageManagement= Image Management
 menu.ok=OK
 
-date=Date
-time=Time
-name=Name
 
-model.name.long=Name of Form
-model.date.long=Date Entered
-model.time.long=Time Entered
-
-Recorder= Recorder
-SendDataNow= Send Data Now
 
 sending.view.done.title=Finished
 sending.view.done=Form Complete, thanks!
@@ -241,16 +119,13 @@ sending.view.submit=Submit Form
 sending.view.now=Send Now
 sending.view.later=Send Later
 sending.view.when=Send Data Now
-sending.view.new=Send to New Server
 
 sending.status.multi=Currently sending ${0} of ${1}. Successfully transmitted ${2} of ${3}.
 sending.status.title=Send Status
 sending.status.none=No Forms to Send
 sending.status.going=Sending in Progress
 
-sending.message.details=Message Details
 sending.message.send=Send Message
-message.list.messages=Messages
 message.log=Log Messages
 message.details=Show Details
 message.send.unsent=Send Unsent
@@ -263,11 +138,7 @@ sending.status.long=Submission Taking too Long
 sending.status.success=Successfully Submitted
 sending.status.failed=Submission Failed
 sending.status.error=Submission Error Unknown
-sending.status.didnotunderstand=Did not understand the response from the server [${0}]
 
-menu.transport=Transport Menu
-Settings= Settings
-ViewSaved=View Saved
 
 
 date.today=Today
@@ -277,34 +148,10 @@ date.tomorrow=Tomorrow
 date.nago=${0} days ago
 date.nfromnow=${0} days from today
 
-pregnancy.edd.approaching=Approaching
 yes=Yes
 no=No
 
-#added because the translations were out of sync. Should be cleaned up at some point.
-DebugLog= Debug Log
-PendingReferral=  Rufaa  ambazo  hazijakamilika
-RecentFollowups=  Ufuatiliaji wa Karibuni
-ChooseMgonjwa=  Chagua  Mgonjwa
-Find=  Tafuta
-ReferralFor=  Rufaa  kwa  ajili ya 
-Resolve=  Kamilisha
-Loading=  Inafunguka
-Sending=  Inatumwa
-Language=  Lugha
-Save=  Tunza  
-SaveandExit=  Tunza na  Toka
-Mark=  Chagua
-Unmark=  Usichague
-Clear=  Futa
-Next=  Mbele
-Review=  Pitia  tena 
-Update=  Badilisha         
-Sort=  Panga
-SortBy=  Panga kwa
-Cancel=  Kataa
 
-id=Namba
 
 user.registration.title=User Registration
 user.registration.attempt=Contacting Server to Register User...
@@ -329,22 +176,17 @@ command.saveexit=Save and Exit
 command.save=Save
 command.language=Language
 
-chatterbox.button.trigger=Ok
-
 entity.command.sort=Sort
 entity.find=Find: 
 entity.nomatch=No matches
 entity.detail.title=${0} Detail
 entity.sort.title=Sort by...
 
-case.title=Select Action
 
 loading.screen.message=Loading...
 loading.screen.title=Loading
 
 #Used by chatterbox dynamically for the "name" of the xform itext locale 
-locale.name.english=English
-locale.name.swahili=Swahili
 
 case.name=Name
 case.id=ID
@@ -366,8 +208,7 @@ log.submit.next.weekly=Next Weekly Log
 
 user.create.header=New User
 
-sending.status.success=Successfully Submitted. Today we have received ${0} forms from you.
-sending.status.problem.datasafe=Successfully Submitted. Your data is safe, but we made a small mistake. We're working on it.
+sending.status.success=Successfully Submitted.
 
 user.entity.name=User
 user.entity.username=Username
@@ -387,10 +228,85 @@ pt=Portuguese
 es=Español
 sw=Kiswahili
 af=Afrikaans
+fra=French
+zh=Chinese
 
 #OQPS Messages
-formentry.triggertitle=Message
+formentry.invalid.input=Invalid Value ${0} Entered
 
-# CommCare HQ
-cchq.case=Cases
-cchq.referral=Referrals
+
+homescreen.title=CommCare
+login.title=CommCare
+
+intro.title=CommCare Startup
+intro.text=You are starting CommCare for the first time. Do you want to restore your data from the server, or start fresh in Admin mode?
+intro.restore=Restore from Server
+intro.start=Login as Admin
+restore.finished=Done
+restore.fetch=Fetch Data
+restore.login.instructions=Enter your user details to fetch your data from the remote server
+restore.badcredentials=Incorrect Username or Password, please try again...
+restore.badserver=Bad Restore Server
+restore.message.startdownload=Attempting to contact server...
+restore.message.connectionmade=Connection made, starting download...
+restore.message.connection.failed=Connection to server failed
+restore.nocache=WARNING! Can't download file to local context, attempting to read OTA
+restore.downloaded=Data downloaded locally.
+restore.starting=Beginning data sync
+restore.success=Data sync successful
+restore.success.partial=Data sync partially successful. Some errors occurred.
+restore.fail=Errors occurred when fetching updates from server.
+restore.baddownload=Download failed, please try again.
+restore.noserveruri=No Restore Server Configured!
+restore.key.continue=Press any key to continue...
+restore.user.exists=Cannot restore a user that is already on the phone!
+
+polish.date.select=Select Date
+
+commcare.review=Review Recent Forms
+review.title=Recent Forms
+review.type=Type
+review.date=Date
+review.type.unknown=Unknown
+
+activity.login.demomode.intro=You are starting CommCare in Demo mode. Demo mode is for testing and practice only! Log in with your user account to perform client visits.
+
+#Used by chatterbox dynamically for the "name" of the xform itext locale
+locale.name.en=English
+locale.name.sw=Swahili
+
+
+#This is the default decorator wrapped numbers in the user interface
+commcare.numwrapper=(${0})
+
+commcare.noupgrade.version=The newest resources cannot be installed locally because a CommCare upgrade is required
+commcare.badversion=The application requires a newer version of CommCare than is installed. It may not work correctly. Should installation be attempted anyway?
+commcare.fail=There was an error, and CommCare could not be started.
+commcare.firstload=First start detected, loading resources...
+
+home.user.new=New User
+home.setttings=Settings
+home.user.edit=Edit Users
+home.data.restore=Restore User Data
+home.demo.reset=Reset Demo Data
+home.updates=Check for Updates
+
+#Restore Bypass Strings
+restore.bypass.start=Beginning restore from local file ${0}, bypassing OTA
+restore.bypass.clean=Attempting to clear local bypass file...
+restore.bypass.clean.success=Local bypass file deleted
+restore.bypass.cleanfail=Couldn't delete OTA bypass file. It is recommended you delete the file ${0} manually.
+restore.bypass.fail=Local Restore bypass failed. Falling back to OTA restore.
+restore.bypass.instructions=Local Restore failed. Please sign-in for OTA Restore.
+
+#Warning about time
+message.timesync=Your phone's time appears to be set incorrectly, which will cause problems in submitted data. Please set your phone to the correct date and time.
+
+menu.send.all=Send All Unsent
+menu.send.all.val=Send All Unsent (${0})
+
+sending.status.problem.datasafe=Successfully Submitted. Your data is safe, but we made a small mistake. We're working on it.
+menu.sync=Sync with Server
+sending.status.didnotunderstand=Did not understand the response from the server [${0}]
+home.change.user=Login as Admin
+id=ID
