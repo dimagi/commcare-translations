@@ -1,0 +1,395 @@
+﻿polish.command.ok=ठीक है
+polish.command.cancel=केंसल
+polish.command.options=विकल्प
+polish.command.exit=बाहर निकलें
+polish.command.select=चयन करें
+polish.command.mark=चिन्हित करें
+polish.command.unmark=अचिन्हित करें
+polish.date.select=तारिख चयन करें
+# for deleting a single char:
+polish.command.delete=मिटाएं
+# for deleting a complete TextField:
+polish.command.clear=खाली करें
+# for hiding menus on BlackBerry devices:
+polish.command.hide=छिपाना
+# for showing a default title when no label
+# is defined in a TextField. This is only
+# used when no direct input mode is activated:
+polish.title.input=इनपुट
+# used for showing a screen for selecting symbols within TextFields:
+polish.command.entersymbol=चिन्ह डालें
+# used by the HtmlBrowser for a links:
+polish.command.followlink=जाएँ
+# used by the HtmlBrowser for submitting a form:
+polish.command.submit=प्रस्तुत करें
+# used by the RssBrowser for returning to the previous page:
+polish.command.back=पीछे
+# RSS commands:
+polish.rss.command.select=दिखाएं
+polish.rss.command.followlink=जाएँ
+
+# used for predictive setup
+polish.predictive.command.enable=भविष्य कहनेवाला चालू करें
+polish.predictive.command.disable=भविष्य कहनेवाला बंद करें
+polish.predictive.command.install=भविष्य कहनेवाला इनपुट स्थापित
+polish.predictive.registerNewWord.label=नए शब्द: 
+polish.predictive.registerNewWord.command=नए शब्द जोड़ने
+polish.predictive.download.title=भविष्य कहनेवाला
+polish.predictive.download.message=पेशीनगोई शब्दकोश या नहीं पाया गलत संस्करण है हो सकता है. प्रेस ठीक है आवेदन बाहर निकलें और शब्दकोश को डाउनलोड के लिए.
+polish.predictive.local.title=भविष्य कहनेवाला
+polish.predictive.local.message=पेशीनगोई शब्दकोश गलत संस्करण है या नहीं पाया जा सका. प्रेस ठीक है शब्दकोश स्थापित करने के लिए.
+polish.predictive.title=भविष्य कहनेवाला इनपुट
+polish.predictive.wordNotFound=शब्द नहीं मिला
+
+polish.predictive.setup.title=भविष्य कहनेवाला सेटअप
+polish.predictive.setup.info=भविष्य कहनेवाला इनपुट के लिए इस्तेमाल किया शब्दकोश स्थापित. कृपया एक क्षण प्रतीक्षा करें...
+polish.predictive.setup.status.delete=पूर्व स्थापना हटाना...
+polish.predictive.setup.status.install=संस्थापन...
+polish.predictive.setup.status.finished=समाप्त, कृपया प्रेस बाहर निकलें...
+polish.predictive.setup.cancel=क्या आप स्थापना रद्द करना चाहते हैं? यह अवांछित प्रभाव में परिणाम कर सकते हैं.
+polish.predictive.setup.error=एक त्रुटि हुई है:
+polish.predictive.setup.cmd.cancel=केंसल
+polish.predictive.setup.cmd.exit=बाहर निकलें
+polish.predictive.setup.cmd.yes=हाँ
+polish.predictive.setup.cmd.no=नहीं
+
+#Javarosa-specific
+
+plussign=/add.png
+question=/question.png
+questioncompulsory=/questioncompulsory.png
+
+splashscreen=/splash.png
+
+
+menu.NewCase=नया केस
+menu.FollowUp=फोलोअप
+menu.Referral=रेफरल फोलोअप
+menu.ViewOpen=अनसुलझे केस दिखाएं
+menu.Resolve=केस हल करें
+menu.Save=रक्षित करें
+menu.Exit=बाहर निकलें
+menu.GetNewForms=नए पत्र ले
+menu.Camera=कैमरा
+menu.Recorder=रिकॉर्डर
+menu.ImageManagement=चित्र प्रबंधन
+menu.ViewSaved=बचाया पत्र दिखाएं
+menu.Delete=मिटाएँ
+menu.ShareForms=पत्र अंश प्राप्त करें
+menu.Settings=सेटिंग
+menu.SaveAndExit=रक्षित करें और बाहर निकलें
+menu.SendForm=पत्र भेजें
+menu.Next=आगे
+menu.Back=पीछे
+menu.ViewAnswers=जवाब दिखाएं
+menu.SendNow=अभी भेजें
+menu.SendLater=बाद में भेजें (रक्षित करें)
+menu.SendToNewServer=नए सर्वर को भेजें
+menu.Scan=स्कैन करें
+menu.SendData=जानकारी भेजें
+menu.send.all=सभी न भेजे भेजें
+menu.send.all.val=सभी अप्रेषित भेजें (${0})
+menu.sync=सर्वर के साथ तुल्यकालित
+menu.Edit=बदल दें
+menu.Review=समीक्षा करें
+menu.Refresh=ताज़ा करें
+menu.MessageStatus=संदेश स्थिति
+menu.Empty=खाली करें
+menu.Login=लॉग इन
+menu.Demo=डेमो
+menu.Capture=कब्जा
+menu.retry=पुनःप्रयास
+
+settings.language=भाषा
+
+view.loading=खुल रहा
+
+hint.TypeOrScan=अपने जवाब लिखें या बारकोड स्कैन चुनें
+
+title.ScanBarcode=बारकोड स्कैन करें
+title.FormsList=पत्र सूची
+title.Login=लॉग इन
+title.SavedForms=बचाया पत्र
+
+chatterbox.button.next=आगे
+button.Next=आगे
+button.Yes=हाँ
+button.No=नहीं
+
+question.SendNow=क्या अभी जानकारी भेजना है?
+
+view.sending.SendStatus=स्थिति भेजें
+view.sending.SendingInProgress=भेज रहा है...
+view.sending.SuccessfullyTransmitted=पत्र सफलतापूर्वक संचारित 
+view.sending.CurrentlySending=पत्र भेज रहा है
+view.sending.SuccessfullySubmitted=भेज दिया गया है! आपका संदर्भ है:
+view.sending.SubmissionFailed=भेज नहीं दिया गया है! \'बचाया दिखाएं\' में बाद में भेज सकता है
+view.sending.SubmissionTakingLong=भेजा जा रहा है एक लंबे समय ले रहा है; आप \'बचाया दिखाएं\' में स्थिति पर चेक के बाद में भेज सकता है
+view.sending.SubmissionErrorUnknown=पत्र नहीं भेजा गया. त्रुटि अज्ञात है!
+view.sending.CompulsoryQuestionsIncomplete=यह सवाल अनिवार्य है. कृपया जारी रखने के लिए जवाब दें.
+view.sending.CompulsoryQuestionIncomplete=यह सवाल अनिवार्य है. कृपया जारी रखने के लिए जवाब दें.
+view.sending.FormUneditable=आप अपने जवाब को बदल नहीं कर सकते जब पत्र की समीक्षा कर रहे है
+view.sending.RequiredQuestion=सवाल अनिवार्य है; जवाब देना चाहिए
+view.sending.of=की
+view.sending.ok=ठीक है
+# inaenda in swahili
+view.sending.endOfSendingMessage=
+
+ 
+
+prop.healthunit=स्वास्थ्य यूनिट
+prop.healthunitcode=स्वास्थ्य यूनिट कोड
+prop.subcounty=ब्लाक
+prop.district=जिला
+prop.hsd=एचएसडी
+prop.finyear=वित्तीय वर्ष
+
+form.property.url=यूआरएल:
+
+form.login.commcareversion=कोमकैर संस्करण
+form.login.buildnumber=संख्या का निर्माण
+form.login.username=नाम:
+form.login.password=कोड:
+form.login.login=लॉग इन
+form.login.login.successful=लॉग इन सफलतापूर्वक
+form.login.loading.profile=आपका प्रोफ़ाइल लोड हो रहा है
+
+activity.login.loginincorrect=लॉग इन ग़लत
+activity.login.tryagain=कृपया पुन: प्रयास करें
+activity.login.demomode=डेमो मोड
+activity.login.demomode.intro=आप डेमो मोड में कोमकैर शुरू कर रहे हैं. डेमो मोड परीक्षण और केवल अभ्यास के लिए है! आपके नाम और कोड के साथ ग्राहक का दौरा करने में लॉग इन करें.
+
+
+form.user.name=उपयोगकर्ता नाम:
+form.user.password=उपयोगकर्ता कोड:
+form.user.confirmpassword=उपयोगकर्ता कोड पुष्टि करें:
+form.user.userid=उपयोगकर्ता आईडी:
+form.user.giveadmin=इस उपयोगकर्ता को व्यवस्थापक अधिकार दे?
+form.user.fillinboth=दोनों उपयोगकर्ता नाम औऱ कोड लिखें
+form.user.reenterpasswords=कृपया अपना कोड पुनः दर्ज करें, कोड की पुष्टि नहीं हो सकता है
+form.user.usernametaken=उपयोगकर्ता का नाम ${0} पहले ही इस्तेमाल हो गया. कृपया एक नया नाम चुनें
+
+activity.adduser.adduser=उपयोगकर्ता जोड़ें
+activity.adduser.useradded=उपयोगकर्ता जोडी गयी
+activity.adduser.useraddedsucc=उपयोगकर्ता सफलतापूर्वक जोड़ा गया
+activity.adduser.problem=समस्या:
+activity.adduser.problem.nametaken=उपयोगकर्ता नाम ${0} पहले ही इस्तेमाल हो गया. कृपया एक नया नाम चुनें
+activity.adduser.problem.emptyuser=दोनों उपयोगकर्ता के नाम औऱ कोड लिखना चाहिए
+activity.adduser.problem.mismatchingpasswords=उपयोगकर्ता कोड एक समान नहीं है
+
+activity.locationcapture.capturelocation=जगह पकड़े
+activity.locationcapture.capturelocationhint=जगह पकड़ के लिए जीपीएस प्रयोग करें
+activity.locationcapture.waitingforfix=तय करने के लिए प्रतीक्षा कर रहा है...
+activity.locationcapture.fixobtained=तय किया!
+activity.locationcapture.fixfailed=जगह पकड़ना विफल है
+activity.locationcapture.readyforcapture=जगह पकड़ना के लिए तैयार है
+activity.locationcapture.Latitude=अक्षांश
+activity.locationcapture.Longitude=देशान्तर
+activity.locationcapture.Altitude=ऊंचाई
+activity.locationcapture.Accuracy=शुद्धता
+activity.locationcapture.LocationError=जगह त्रुटि
+activity.locationcapture.GPSNotAvailable=जीपीएस उपलब्ध नहीं है
+activity.locationcapture.capturelocationhint=जगह पकड़ना के लिए जीपीएस प्रयोग करें
+
+formreview.period.select=समीक्षा अवधि का चयन करें
+formreview.period.today=आज लिखा
+formreview.period.yesterday=कल लिखा
+formreview.period.week.this=इस हफ़्ते लिखा
+formreview.period.week.last=पिछले हफ़्ते लिखा
+
+formview.repeat.addNew=नए जोड़ें दोहराने?
+formview.CompulsoryQuestionIncomplete=यह सवाल अनिवार्य है. कृपया जारी रखने के लिए जवाब दें.
+
+activity.edituser.edituser=उपयोगकर्ता बदल दें
+
+Pregnancy=गर्भावस्था
+household.visit=घर-घर जाकर
+household.id=घरेलू आईडी
+NewBirth=नया जन्म
+
+PendingReferrals=अनिर्णीत रेफरल
+Today=आज
+Yesterday=कल
+NoPendingReferrals=अनिर्णीत रेफरल नहीं है
+Select=चयन करें
+Resolve=संकल्प करें
+ReferralFor=रेफरल
+Back=पीछे
+Camera=कैमरा
+Delete=मिटाएं
+FormNotLoaded=पत्र भरा हुआ नहीं है
+
+Exit=बाहर निकलें
+GetNewForms=नए पत्र ले
+ImageManagement=चित्र प्रबंधन
+menu.ok=ठीक है
+
+date=तारीख
+time=समय
+name=नाम
+
+model.name.long=पत्र का नाम
+model.date.long=तारीख लिखा
+model.time.long=समय लिखा
+
+Recorder=रिकॉर्डर
+SendDataNow=डेटा अब भेजें
+
+sending.view.submit=पत्र सबमिट
+sending.view.now=अब भेजें
+sending.view.later=बाद भेजें
+sending.view.when=डेटा अब भेजें
+sending.view.new=नए सर्वर को भेजें
+
+sending.status.multi=${0} से ${1} भेज रहा है. ${2} से ${3} सबमिट सफलतापूर्वक किया गया है.
+sending.status.title=स्थिति भेजें
+sending.status.none=भेजने के लिए कोई पत्र नहीं है
+sending.status.going=भेज रहा है
+
+sending.message.details=संदेश का विवरण
+sending.message.send=संदेश भेजें
+message.list.messages=संदेश
+message.log=संदेश का लॉग
+message.details=विवरण दिखाएँ
+message.send.unsent=नहीं भेजा गया
+message.delete=संदेश मिटाएं
+
+debug.log=डीबग लॉग
+
+sending.status.failures=कुछ त्रुटियाँ हुईं, ${0} पत्र अप्रेषित है
+sending.status.long=सबमिट करना लंबे समय ले रहा है
+sending.status.success=सबमिट सफलतापूर्वक किया है
+sending.status.failed=सबमिट विफल किया है
+sending.status.error=सबमिट त्रुटि अज्ञात
+sending.status.didnotunderstand=सर्वर से प्रतिक्रिया समझ में नहीं आता [${0}]
+
+menu.transport=परिवहन मेनू
+Settings=सेटिंग
+ViewSaved=बचाया दिखाएं
+
+
+date.today=आज
+date.yesterday=कल
+date.twoago=${0} दिन पहिले
+date.tomorrow=कल
+date.nago=${0} दिन पहिले
+date.nfromnow=${0} दिन बाद
+
+pregnancy.edd.approaching=निकट
+yes=हाँ
+no=नहीं
+
+#added because the translations were out of sync. Should be cleaned up at some point.
+DebugLog= Debug Log
+PendingReferral=  Rufaa  ambazo  hazijakamilika
+RecentFollowups=  Ufuatiliaji wa Karibuni
+ChooseMgonjwa=  Chagua  Mgonjwa
+Find=  Tafuta
+ReferralFor=  Rufaa  kwa  ajili ya 
+Resolve=  Kamilisha
+Loading=  Inafunguka
+Sending=  Inatumwa
+Language=  Lugha
+Save=  Tunza  
+SaveandExit=  Tunza na  Toka
+Mark=  Chagua
+Unmark=  Usichague
+Clear=  Futa
+Next=  Mbele
+Review=  Pitia  tena 
+Update=  Badilisha         
+Sort=  Panga
+SortBy=  Panga kwa
+Cancel=  Kataa
+
+id=Namba
+
+user.registration.title=उपयोगकर्ता का पंजीकरण
+user.registration.attempt=उपयोगकर्ता का पंजीकरण के लिए सर्वर से संपर्क कर रहा है...
+user.registration.failmessage=उपयोगकर्ता का पंजीकरण पूरा नहीं किया जा सका, सर्वर से संपर्क नहीं किया जा सका. पुनःप्रयास?
+user.registration.success=उपयोगकर्ता का पंजीकरण सफलतापूर्वक है!
+user.registration.badresponse=उपयोगकर्ता का पंजीकरण प्राप्त, लेकिन प्रतिक्रिया समझ में नहीं आता. जारी रखें?
+
+command.retry=पुनःप्रयास
+
+
+# -- Begin Entries on March 10, 2010 to complete localizations -- 
+
+command.ok=ठीक है
+command.back=पीछे
+command.select=चयन करें
+command.cancel=केंसल
+
+#Chatterbox commands
+command.next=आगे
+command.exit=बाहर निकलें
+command.saveexit=बचाएं और बाहर निकलें
+command.save=बचाएं
+command.language=भाषा
+
+chatterbox.button.trigger=ठीक है
+
+entity.command.sort=क्रमबद्ध करें
+entity.find=ढूंढे: 
+entity.nomatch=कोई मिलान नहीं
+entity.detail.title=${0} विवरण
+entity.sort.title=क्रमबद्ध करें...
+
+case.title=कार्य का चयन करें
+
+loading.screen.message=लोड हो रहा है...
+loading.screen.title=लोड हो रहा है
+
+#Used by chatterbox dynamically for the "name" of the xform itext locale 
+locale.name.english=अंग्रेजी
+locale.name.hindi=हिन्दी
+
+case.name=Name
+case.id=आईडी
+case.date.opened=खोलने की तारीख
+case.status=खूला
+
+yes=हाँ
+no=नहीं
+date.unknown=अज्ञान
+
+log.submit.url=यूआरएल सबमिट लॉग
+log.submit.never=ऑटो नहीं भेजें
+log.submit.short=डिवाइस लॉग भेजें
+log.submit.full=पूर्ण निदान भेजें
+log.submit.nigthly=रात के लॉग स्वरूप
+log.submit.weekly=हफ़्ता के लॉग स्वरूप
+log.submit.next.daily=अगला रोज़ लॉग
+log.submit.next.weekly=अगला हफ़्ता लॉग
+
+user.create.header=नया उपयोगकर्ता
+
+sending.status.success=सफलतापूर्वक सबमिट किया है. आज आपसे ${0} पत्र प्राप्त हुआ है.
+sending.status.problem.datasafe=सफलतापूर्वक सबमिट किया है. आपके डेटा सुरक्षित है, लेकिन हम एक छोटी सी गलती की. हम उस पर काम कर रहे हैं.
+
+user.entity.name=उपयोगकर्ता
+user.entity.username=उपयोगकर्ता नाम
+user.entity.type=क्षेत्र
+user.entity.admin=प्रशासक
+user.entity.normal=साधारण
+user.entity.demo=डेमो
+user.entity.unknown=अज्ञान
+
+repeat.repitition=दुहराव
+repeat.message.single=${0} जोड़े?
+repeat.message.multiple=${0} और जोड़े?
+
+#List of two-letter->Language Mappings
+en=English
+pt=Portuguese
+es=Español
+sw=Kiswahili
+af=Afrikaans
+hi=हिन्दी
+
+#OQPS Messages
+formentry.triggertitle=संदेश
+
+# CommCare HQ
+cchq.case=केस
+cchq.referral=रेफरल
