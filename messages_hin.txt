@@ -279,31 +279,6 @@ pregnancy.edd.approaching=निकट
 yes=हाँ
 no=नहीं
 
-#added because the translations were out of sync. Should be cleaned up at some point.
-DebugLog= Debug Log
-PendingReferral=  Rufaa  ambazo  hazijakamilika
-RecentFollowups=  Ufuatiliaji wa Karibuni
-ChooseMgonjwa=  Chagua  Mgonjwa
-Find=  Tafuta
-ReferralFor=  Rufaa  kwa  ajili ya 
-Resolve=  Kamilisha
-Loading=  Inafunguka
-Sending=  Inatumwa
-Language=  Lugha
-Save=  Tunza  
-SaveandExit=  Tunza na  Toka
-Mark=  Chagua
-Unmark=  Usichague
-Clear=  Futa
-Next=  Mbele
-Review=  Pitia  tena 
-Update=  Badilisha         
-Sort=  Panga
-SortBy=  Panga kwa
-Cancel=  Kataa
-
-id=Namba
-
 user.registration.title=उपयोगकर्ता का पंजीकरण
 user.registration.attempt=उपयोगकर्ता का पंजीकरण के लिए सर्वर से संपर्क कर रहा है...
 user.registration.failmessage=उपयोगकर्ता का पंजीकरण पूरा नहीं किया जा सका, सर्वर से संपर्क नहीं किया जा सका. पुनःप्रयास?
