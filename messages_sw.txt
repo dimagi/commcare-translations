@@ -221,26 +221,26 @@ sending.status.error=Tatizo lisilojulikana katika uwasilishaji
 
 menu.transport=Transport Menu
 
-PendingReferral=  Rufaa  ambazo  hazijakamilika
-RecentFollowups=  Ufuatiliaji wa Karibuni
-ChooseMgonjwa=  Chagua  Mgonjwa
-Find=  Tafuta
-ReferralFor=  Rufaa  kwa  ajili ya 
-Resolve=  Kamilisha
-Loading=  Inafunguka
-Sending=  Inatumwa
-Language=  Lugha
-Save=  Tunza  
-SaveandExit=  Tunza na  Toka
-Mark=  Chagua
-Unmark=  Usichague
-Clear=  Futa
-Next=  Mbele
-Review=  Pitia  tena 
-Update=  Badilisha         
-Sort=  Panga
-SortBy=  Panga kwa
-Cancel=  Kataa
+PendingReferral=Rufaa  ambazo  hazijakamilika
+RecentFollowups=Ufuatiliaji wa Karibuni
+ChooseMgonjwa=Chagua  Mgonjwa
+Find=Tafuta
+ReferralFor=Rufaa  kwa  ajili ya
+Resolve=Kamilisha
+Loading=Inafunguka
+Sending=Inatumwa
+Language=Lugha
+Save=Tunza
+SaveandExit=Tunza na  Toka
+Mark=Chagua
+Unmark=Usichague
+Clear=Futa
+Next=Mbele
+Review=Pitia  tena
+Update=Badilisha
+Sort=Panga
+SortBy=Panga kwa
+Cancel=Kataa
 
 #seems to be used by entity select screen
 date=Tar.
