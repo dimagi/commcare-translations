@@ -32,8 +32,12 @@ def load_translations(lang):
     except IOError:
         return {}
 
+
 def dumps(dct):
     io = StringIO()
-    for key,val in sorted(dct.items()):
+    for key, val in sorted(dct.items()):
+        # replace all blanks with non-breaking spaces
+        if not val.strip():
+            val = u'\u00A0'
         print >> io, u"{key}={val}".format(key=key.strip(), val=val).encode('utf8')
     return unicode(io.getvalue(), encoding='utf8')
