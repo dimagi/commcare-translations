@@ -51,7 +51,7 @@ for element in string_elements:
         element_text = re.sub(reg, replacement, element_text)
 
     # replace all %s occurences
-    element_text = re.sub(r'\%s', '\${0}', element_text)
+    element_text = re.sub(r'\%s', '${0}', element_text)
 
     line = 'odk_' + element.attrib['name'] + '=' + element_text
     output_file.write(line + '\n')
