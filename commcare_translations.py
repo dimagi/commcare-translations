@@ -21,16 +21,22 @@ def load(f):
         messages[line[:i].strip()] = line[i+1:]
     return messages
 
-def load_translations(lang):
+
+def load_translations(lang, version=1):
     # pt => por: hack for backwards compatibility
-    if lang == 'pt': lang = 'por'
-    
-    path = normpath(join(__file__, '../messages_{lang}.txt'.format(lang=lang)))
-    try:
-        with open(path) as f:
-            return load(f)
-    except IOError:
-        return {}
+    if lang == 'pt':
+        lang = 'por'
+
+    while version:
+        rel_path = '../messages_{lang}-{version}.txt'.format(lang=lang,
+                                                             version=version)
+        path = normpath(join(__file__, rel_path))
+        try:
+            with open(path) as f:
+                return load(f)
+        except IOError:
+            version -= 1
+    return {}
 
 
 def dumps(dct):
