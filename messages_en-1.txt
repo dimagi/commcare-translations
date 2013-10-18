@@ -310,3 +310,5 @@ menu.sync=Sync with Server
 sending.status.didnotunderstand=Did not understand the response from the server [${0}]
 home.change.user=Login as Admin
 id=ID
+
+case_sharing.exactly_one_group=Your phone is not set up properly for case sharing. Please contact your supervisor.
