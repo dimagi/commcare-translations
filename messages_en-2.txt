@@ -989,3 +989,5 @@ odk_intent_callout_button=Get Data
 odk_intent_callout_button_update=Update Data
 odk_finding_location=Finding Location...
 odk_found_location=Location Found!
+
+case_sharing.exactly_one_group=Your phone is not set up properly for case sharing. Please contact your supervisor.
