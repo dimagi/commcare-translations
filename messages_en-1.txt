@@ -311,4 +311,4 @@ sending.status.didnotunderstand=Did not understand the response from the server 
 home.change.user=Login as Admin
 id=ID
 
-case_sharing.exactly_one_group=Your phone is not set up properly for case sharing. Please contact your supervisor.
+case_sharing.exactly_one_group=This application has case sharing enabled. There is no case sharing group assigned to this user. Please verify on CommCareHQ.
