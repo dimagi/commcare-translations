@@ -990,4 +990,4 @@ odk_intent_callout_button_update=Update Data
 odk_finding_location=Finding Location...
 odk_found_location=Location Found!
 
-case_sharing.exactly_one_group=This application has case sharing enabled. There is no case sharing group assigned to this user. Please verify on CommCareHQ.
+case_sharing.exactly_one_group=The case sharing settings for your user are incorrect. This user must be in exactly one case sharing group. Please contact your supervisor.
