@@ -12,7 +12,7 @@ def load(f):
     for line in f:
         # i think this line is wrong, but i don't want to break anything
         # clayton says there's no \# escaping on the phone
-        line = re.split(r'(?<!\\)#', line)[0] # strip comments starting with '#', ignoring '\#'
+        line = re.split(r'^\s*(?<!\\)#', line)[0] # strip comments starting with '#', ignoring '\#'
         line = line.strip()
         if not line: continue
         if not isinstance(line, unicode):
