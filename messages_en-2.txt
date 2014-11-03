@@ -243,7 +243,7 @@ polish.TextField.charactersKey6=mno6
 polish.TextField.charactersKey7=pqrs7
 polish.TextField.charactersKey8=tuv8
 polish.TextField.charactersKey9=wxyz9
-polish.TextField.charactersKey0= 0
+polish.TextField.charactersKey0=0
 
 #User registration
 menu.send.later=Send Later
@@ -451,7 +451,7 @@ updates.checking=Checking for updates...
 
 verify.title=CommCare Resource Verification
 verify.checking=Verifying Resources
-verify.progress = Verifying resources. ${0} resources verified of ${1} total
+verify.progress=Verifying resources. ${0} resources verified of ${1} total
 
 modules.m0=pregenancy
 
