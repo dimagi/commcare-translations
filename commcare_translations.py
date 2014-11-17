@@ -27,6 +27,11 @@ def load_translations(lang, version=1):
     if lang == 'pt':
         lang = 'por'
 
+    try:
+        str(lang)
+    except UnicodeEncodeError:
+        return {}
+
     while version:
         rel_path = '../messages_{lang}-{version}.txt'.format(lang=lang,
                                                              version=version)
