@@ -2,8 +2,10 @@ This repository stores translations for all the text strings that appear in Comm
 
 The translations for language with language code "xy" should be in a file named "messages_xy.txt".
 
-Mobile translations are stored here (for ODK at least): https://github.com/dimagi/commcare-odk/blob/master/app/assets/locales/messages_ccodk_default.txt.
-When adding translations you can find the default values that should be used there.
+Mobile translations are stored in the following places.
+When adding translations you can find the default values that should be used here:
+ - ODK core strings: https://github.com/dimagi/opendatakit.collect/blob/master/res/values/strings.xml
+ - CommCare ODK strings: https://github.com/dimagi/commcare-odk/blob/master/app/assets/locales/messages_ccodk_default.txt.
 
 When adding translations you should typically only need to add them to version 2 of the translations file.
 Version 1 is just for backwards compatibility with the previous translations implementation on HQ.
