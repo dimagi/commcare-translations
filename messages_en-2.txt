@@ -898,6 +898,7 @@ odk_please_wait_long=Please wait. This could take a few minutes.
 odk_quit_application=Exit \${0}
 odk_quit_entry=Save Form and Exit
 odk_refresh=Refresh
+odk_repeat_go_back=Go Back
 odk_replace_audio=Replace Sound
 odk_replace_barcode=Replace Barcode
 odk_replace_image=Replace Picture
