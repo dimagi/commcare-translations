@@ -525,6 +525,8 @@ sync.progress.submitting=Sending Unsent Data to Server
 sync.progress.purge=Cleaning local data
 sync.progress.authing=Contacting server for sync...
 sync.progress.downloading=Server contacted, downloading data.
+sync.process.downloading.progress=Download Progress: ${0}%
+sync.process.processing=Processing server data: ${0}/${1}
 
 sync.recover.needed=Phone and server have inconsistent data! Starting recovery...
 sync.recover.started=Recovering local DB State. Please do not turn off the app!
@@ -771,7 +773,7 @@ notification.send.malformed.title=Bad Form on SD Card
 notification.send.malformed.detail=The file ${0} on your SD card was malformed and couldn't be read. It has been removed as a precaution.
 
 problem.report.button=Submit Report
-problem.report.prompt=Please enter the issue you'd like to report below
+problem.report.prompt=Please enter the issue you'd like to report below. Please be sure to state where you encountered the problem, step-by-step instructions for reproducing the error, what exactly happened, and any text or error message that occurred.
 problem.report.menuitem=Report Problem
 
 verification.title=Verifying Multimedia
@@ -782,6 +784,9 @@ verification.fail.message=Some of your application's multimedia has not been ins
 wifi.direct.base.folder=wifidirect
 wifi.direct.submit.missing=The folder ${0} you are trying to submit does not exist. Please verify that this file is where it should be.
 
+wifi.direct.transfer.forms=Transfer Forms
+wifi.direct.receive.forms=Receive Forms
+wifi.direct.submit.forms=Submit Forms
 
 # *** strings.xml ***
 
