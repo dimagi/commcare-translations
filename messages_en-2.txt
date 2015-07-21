@@ -1005,5 +1005,6 @@ odk_intent_callout_button=Get Data
 odk_intent_callout_button_update=Update Data
 odk_finding_location=Finding Location...
 odk_found_location=Location Found!
+odk_form_entry_start_hide=Thanks! Don't show this again.
 
 case_sharing.exactly_one_group=The case sharing settings for your user are incorrect. This user must be in exactly one case sharing group. Please contact your supervisor.
