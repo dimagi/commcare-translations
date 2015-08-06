@@ -2,11 +2,13 @@ from os.path import join, normpath
 import re
 from StringIO import StringIO
 
+
 def loads(s):
     # okay this is an abstraction violation, but I wrote load(f) so I know this will work
     f = s.split('\n')
     return load(f)
     
+
 def load(f):
     messages = {}
     for line in f:
@@ -50,5 +52,7 @@ def dumps(dct):
         # replace all blanks with non-breaking spaces
         if not val.strip():
             val = u'\u00A0'
+        # get rid of newlines
+        val = val.replace('\n', '\\n')
         print >> io, u"{key}={val}".format(key=key.strip(), val=val).encode('utf8')
     return unicode(io.getvalue(), encoding='utf8')
