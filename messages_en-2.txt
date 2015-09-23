@@ -1178,5 +1178,3 @@ odk_sign_button=Gather Signature
 odk_markup_image=Markup Image
 odk_draw_image=Sketch Image
 odk_pref_nav_bar=Enable Navigation Bar (BETA!)
-
-
