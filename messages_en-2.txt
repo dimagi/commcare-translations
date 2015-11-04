@@ -446,18 +446,28 @@ commcare.install.oom=CommCare needs to restart in order to continue installing y
 
 #new localizations should be added above the comment "Add new localization strings here" in this file
 
-option.yes=Yes
-option.no=No
-option.cancel=Cancel
+option.yes=YES
+option.no=NO
+option.cancel=CANCEL
 
 install.problem.unexpected=Unexpected install error!
-updates.check=Please wait while CommCare checks for upgrade
+install.keep.trying=Keep trying if connection is interrupted
 updates.found=Updates found! Downloading new resource ${0} done of ${1}
-updates.downloaded=Updates downloaded. Committing new resources....
 updates.success=CommCare is up to date
-updates.title=CommCare App Update
-updates.checking=Checking for updates...
-updates.keep.trying=Keep trying if connection is interrupted
+updates.check.begin=Checking for updates
+updates.check.failed=Failed to download updates
+updates.check.cancel=Stop checking
+updates.check.cancelling=Cancelling check for updates
+updates.install.finished=Just finished updating!
+updates.check.last=Last checked for updates: ${0}
+updates.check.network_unavailable=No network connectivity
+updates.staged.version=Update to version ${0}
+updates.error=Error encountered during update download
+
+updates.pinned.download=Downloading updates
+updates.pinned.progress=${0}/${1}
+
+install.current.version=Version currently installed: ${0}
 
 verify.title=CommCare Resource Verification
 verify.checking=Verifying Resources
@@ -483,15 +493,24 @@ upgrade.button.startover=Restart Upgrade
 updates.resources.initialization=Initializing Resources
 updates.resources.profile=Locating application...
 
+updates.installing.title=Installing new app version
+updates.installing.message=Installing downloaded updates
+
 menu.basic=Basic Install
 menu.advanced=Advanced Install
 menu.archive=Offline Install
+menu.sms=SMS Install
+menu.sms.not.found=Install link not found in your texts!
+menu.sms.ready=Found install link. Press "Start" to begin installation.
+menu.sms.not.verified=We found a valid looking text, but could not verify its authenticity.
+menu.sms.not.retrieved=We could not retrieve the installation link. Please check your connectivity and try again.
+
 
 profile.found=Application found. ${0} resources loaded, of ${1} total.
 
 app.workflow.incomplete.continue.title=Continue Form
 app.workflow.incomplete.continue=You've got a saved copy of an incomplete form for this client. Do you want to continue filling out that form?
-app.workflow.incomplete.continue.option.delete=Delete Old Copy
+app.workflow.incomplete.continue.option.delete=DELETE OLD COPY
 
 home.start=Start
 home.forms=Form Records
@@ -521,8 +540,8 @@ home.menu.about=About CommCare
 home.developer.options.enabled=Developer Mode Enabled
 
 install.version.mismatch=The application requires CommCare version ${0}. You are running ${1}.
-install.major.mismatch=Please uninstall your CommCare ODK Application from the phone Settings Menu, navigate to the marketplace, and install the proper version.
-install.minor.mismatch=Please update your version of CommCareODK from the Android Market to run this application. 
+install.major.mismatch=Please uninstall your CommCare Application from the phone Settings Menu, navigate to the marketplace, and install the proper version.
+install.minor.mismatch=Please update your version of CommCare from the Android Market to run this application. 
 
 sync.success.sent.singular=Form sent to server!
 sync.success.sent=${0} forms sent to server!
@@ -562,9 +581,14 @@ login.password=Password
 login.button=Log In
 login.sync=Synchronize with server
 login.bad.password=We couldn't find a user with this password. Please try another!
+login.welcome.single=Welcome back! Please log in.
+login.welcome.multiple=Welcome back! Please select an app and log in.
 
-version.id.long=CommCare ODK, version "${0}"(${1}). App v${5}. CommCare Version ${2}. Build ${3}, built on: ${4}
-version.id.short=CCODK:"${0}"(${1}). v${5} CC${2}b[${3}] on ${4}
+login.update.install.success=App update successfully applied!
+login.update.install.failure=App update failed to apply!
+
+version.id.long=CommCare Android, version "${0}"(${1}). App v${5}. CommCare Version ${2}. Build ${3}, built on: ${4}
+version.id.short=CCDroid:"${0}"(${1}). v${5} CC${2}b[${3}] on ${4}
 
 app.workflow.incomplete.heading=Incomplete Forms
 app.workflow.saved.heading=Saved Forms
@@ -592,6 +616,9 @@ form.record.unsent=Unsent
 
 form.record.gone=[Form Removed on Current Version]
 form.record.gone.message=The form that was used to enter this data is no longer on the current version of the app, and can't be viewed.
+
+form.archive.purge.title=Removing out-of-date archived forms
+form.archive.purge.message=Removing archived forms that are past their validation date.
 
 app.storage.missing.title=SD Card Missing
 app.storage.missing.message=Your device's SD card has been removed, please return the SD card to continue using CommCare
@@ -708,11 +735,13 @@ select.detail.title=Details
 select.list.title=Select
 
 home.logged.in.message=Logged In: ${0}
+notification.logged.in=Logged Into ${0}
+
 title.datum.wrapper=[${0}]
 
 activity.task.error.generic=Unexpected error! Please try again.
 
-dialog.ok=Ok
+dialog.ok=OK
 
 connection.test.prompt=This will try to fix connection problems that you may be having.
 connection.test.run=Run Connection Test
@@ -741,8 +770,6 @@ notification.sync.connections.action=You don't have any active data connections 
 multiple.apps.unverified.title=Missing Multimedia for all Apps
 multiple.apps.unverified.message=All of your available apps are missing their associated multimedia resources. Please notify your supervisor so that he/she can fix this via the CommCare App Manager page.
 
-login.welcome.single=Welcome back! Please log in.
-login.welcome.multiple=Welcome back! Please select an app and log in.
 seating.app=CommCare is loading your app
 
 no.print.data=No data has been provided for your print activity. Please see a supervisor to fix this.
@@ -802,6 +829,10 @@ notification.bad.certificate.title=Couldn't securely connect to the server.
 notification.bad.certificate.detail=CommCare couldn't validate the security information provided by the remote server. 
 notification.bad.certificate.action=Check your device's time and date to make sure they are correct. If the problem persists, try to connect to a secure server with the phone's browser
 
+notification.restore.storagefull.title=Couldn't save your application's resources
+notification.restore.storagefull.detail=CommCare was not able to save one or more of your application's resources on the device. This could be because the entire application was too large, or because an individual fixture exceeded 1MB.
+notification.restore.storagefull.action=Check the amount of space available on your device. If the SD card isn't full, then it's likely one of your fixtures is too large (> 1MB) and needs to be reduced or split.
+
 notification.restore.unknown.title=Unknown Error during Restore
 notification.restore.unknown.detail=CommCare had trouble dealing with something that happened when you tried to log in 
 notification.restore.unknown.action=Try to log in again. If you receive this message again, force close the application from the Manage Applications menu on the phone. If the error persists, contact technical support.
@@ -837,7 +868,7 @@ notification.install.unknown.detail=An unexpected failure happened while trying 
 
 notification.install.badstate.title=Attempt to install multiple apps
 notification.install.badstate.detail=There is already an CommCare app installed on this phone. Multiple apps are not currently supported. Please click below to login to your existing application, or clear application data from your device's Settings to install a new app.
-notification.install.badstate.action=If you want to remove the currently installed app: First log in and click Sync to ensure all data is off the phone. Then navigate to the "Applications" menu on the phone's settings, and select CommCare ODK. Click "Clear Data" to wipe all data from the current app. Then try to reinstall.
+notification.install.badstate.action=If you want to remove the currently installed app: First log in and click Sync to ensure all data is off the phone. Then navigate to the "Applications" menu on the phone's settings, and select CommCare. Click "Clear Data" to wipe all data from the current app. Then try to reinstall.
 
 notification.install.nolocal.title=Couldn't install files to storage
 notification.install.nolocal.detail=CommCare couldn't open your local storage to write your app's files.
@@ -850,6 +881,8 @@ notification.install.duplicate.action=Navigate to the drop-down menu on your log
 notification.install.uptodate.title=CommCare is Up to Date
 notification.install.uptodate.detail=A newer version of CommCare is not available
 
+notification.install.updatestaged.title=CommCare update ready to install
+notification.install.updatestaged.detail=A newer version of CommCare is ready to install on next login
 notification.install.no.connection.title=No internet connection
 notification.install.no.connection.detail=Install failed because your device is not connected to Wi-Fi currently
 notification.install.duplicate.action=Go to your device settings to check the current status of your Wi-Fi connection. If a connection is unavailable at this time, you may try offline install.
@@ -898,7 +931,7 @@ notification.sending.quarantine.detail=CommCare had a problem reading one of you
 notification.sending.quarantine.action=You can view the record in the saved records screen by checking the quarantine filter. From there you can restore quarantined records back onto the unsent queue to try to submit them again. Restarting the device and/or ejecting and re-inserting your external storage first may correct the issue. 
 
 
-notification.network.timeout.title=Timed out waiting for Remote Response
+notification.network.timeout.title=It is taking a long time for the server to respond. Please try again.
 notification.network.timeout.detail=The remote service did not respond to CommCare's request within the time limit. It may be busy or this may indicate a connection problem.
 notification.network.timeout.action=Wait a short period and try your request again, or try again later when the remote service may be less busy. If the problem persists, contact your supervisor. 
 
@@ -928,16 +961,16 @@ notification.case.predicate.action=Filtering your list failed with a bad filter 
 
 archive.install.title=Unzipping your Application Resources
 archive.install.progress=Unzipped ${0} out of ${1} resources
-archive.install.state.empty=Please select a ZIP file to begin
+archive.install.state.empty=Please select a CCZ file to begin
 archive.install.state.ready=Offline installer ready, press install to begin
-archive.install.state.done=Your zip file has been installed
-archive.install.state.invalid.path=The file path selected is not a valid zip file. Please select a valid file.
+archive.install.state.done=Your CCZ file has been installed
+archive.install.state.invalid.path=The file path selected is not a valid CCZ file. Please select a valid file.
 archive.install.cancelled=Offline installation cancelled
-archive.install.bad=The selected ZIP file is not valid. Please choose a valid zip file.
+archive.install.bad=The selected CCZ file is not valid. Please choose a valid ccz file.
 archive.install.unzip=Unzipping
 archive.install.no.browser=You need a file manager to access the files on this device. You have not installed a file manager, please go to the Google Play Store and download a file manager, then return to this screen.
 
-archive.install.prompt=Install your CommCare application from a .zip file
+archive.install.prompt=Install your CommCare application from a .ccz file
 archive.install.button=Install App
 
 wifi.direct.transfer.forms=Transfer Forms
@@ -945,6 +978,8 @@ wifi.direct.receive.forms=Receive Forms
 wifi.direct.submit.forms=Submit Forms
 
 form.attachment.invalid=Invalid filetype choosen. Please select a valid multimedia file.
+
+form.hierarchy=Form Hierarchy
 
 invalid.image.selection=The image you have chosen cannot be located on your device. Please select another image.
 image.capture.not.saved=The image you have taken was not able to be saved properly. Please try again.
@@ -965,13 +1000,12 @@ odk_add_repeat_no=Do Not Add
 odk_add_repeat_no_exits=Do Not Add, I'm Finished
 odk_advance=forward to\nnext\nprompt
 odk_altitude=Altitude
-odk_app_name=ODK Collect
 odk_attachment_oversized=Warning: attached large file of size ${0} kb. This could cause problems with submitting to the server depending on your network conditions.
 odk_audio_file_error=No audio file was specified.
 odk_audio_file_invalid=File: ${0} is not a valid audio file.
 odk_backup=back to\nprevious\nprompt
 odk_barcode_scanner_error=Sorry, Barcode Scanner is not installed!
-odk_cancel=Cancel
+odk_cancel=CANCEL
 odk_cancel_loading_form=Cancel
 odk_cancel_location=Cancel
 odk_cancel_saving_form=Cancel
@@ -980,25 +1014,19 @@ odk_capture_audio=Record Sound
 odk_capture_image=Take Picture
 odk_capture_video=Record Video
 odk_change_language=Change Language
-odk_change_password=Password
-odk_change_server_url=Server URL
-odk_change_username=ODK Username
 odk_clearanswer_confirm=Remove the response to "${0}"?
 odk_clear_answer=Remove response
 odk_clear_answer_ask=Remove This Response?
-odk_clear_answer_no=Cancel
+odk_clear_answer_no=CANCEL
 odk_completed_data=Complete (${0})
 odk_data=Saved Forms
 odk_data_saved_error=Sorry, form save failed!
 odk_data_saved_ok=Form successfully saved!
-odk_default_completed=Default to Finalized
-odk_default_completed_summary=Mark form as finalized by default
-odk_default_server_url=https://opendatakit.appspot.com
 odk_delete_confirm=Delete ${0} form(s)?
 odk_delete_file=Delete Selected
 odk_delete_no=Do Not Delete
 odk_delete_yes=Delete Forms
-odk_discard_answer=Remove response
+odk_discard_answer=REMOVE RESPONSE
 odk_download=Get Selected
 odk_download_forms_result=Download Result
 odk_downloading_data=Connecting to Server
@@ -1048,11 +1076,7 @@ odk_location_provider_accuracy=Location found using ${0}. Accuracy is ${1} m.
 odk_location_provider=Using ${0} provider. Please wait for greater accuracy.
 odk_location_accuracy=Location found. Accuracy is ${0} m
 odk_longitude=Longitude
-odk_main_menu=Main Menu
-odk_main_menu_details=Data collection made easier...
-odk_main_menu_message=ODK Collect v1.1.7
 odk_manage_files=Delete Saved Form
-odk_mark_finished=This Form is Completed
 odk_no=No
 odk_noselect_error=Sorry, you have not selected any forms!
 odk_no_capture=Nothing recorded yet.
@@ -1067,7 +1091,6 @@ odk_one_capture=Multimedia recorded.
 odk_parse_error=Sorry, unable to parse form.
 odk_parse_legacy_formlist_failed=The server has not provided an available-forms document compatible with Aggregate 0.9.x. : ${0}
 odk_parse_openrosa_formlist_failed=The server has not provided an available-forms document compatible with the OpenRosa version 1.0 standard: ${0}
-odk_password=Password
 odk_play_audio=Play Sound
 odk_play_video=Play Video
 odk_please_wait=Please wait a few moments.
@@ -1106,35 +1129,17 @@ odk_upload_some_failed=Sorry, ${0} form(s) failed to send!
 odk_url_error=Sorry, invalid URL!
 odk_username=Username
 odk_view_hierarchy=Go To Prompt
-odk_open_data_kit=Open Data Kit
-odk_general_preferences=Change Settings
-odk_click_to_web=Tap to visit http://opendatakit.org
+odk_form_entry_settings=Change Settings
 odk_first_run=Do first run on restart
 odk_client=Client
-odk_show_splash=Show Splash Screen
-odk_show_splash_summary=Shows when application starts
-odk_splash_path=Selected Splash Image
-odk_default_splash_path=ODK Default
-odk_select_another_image=Select Another Image
 odk_use_odk_default=Use Default Image
-odk_change_splash_path=Change Image
 odk_show_location=Show Location
-odk_app_url=http://opendatakit.org
 odk_keep_changes=Save Changes to Incomplete Form
 odk_go_to_location=Go to Location
-odk_change_formlist_url=Form List Path (appended to Server URL)
-odk_protocol=Protocol
-odk_change_protocol=Protocol
-odk_change_submission_url=Submission Path (appended to Server URL)
-odk_formlist_url=Form List Path
-odk_submission_url=Submission Path
 odk_font_size=Text Font Size
 odk_change_font_size=Text Font Size
 odk_form_scan_starting=Scanning for forms...
 odk_form_scan_finished=Form scanning completed
-odk_powered_by_odk=v1.1.7 - Powered by Open Data Kit
-odk_default_odk_formlist=/formList
-odk_default_odk_submission=/submission
 odk_access_error=Error while accessing ${0}: 
 odk_manifest_server_error=Manifest reply does not report an OpenRosa version -- bad server?
 odk_root_element_error=Root element is not <manifest\> -- was ${0}
@@ -1156,9 +1161,6 @@ odk_save_form_as=Name this form:
 odk_save_as_error=Saved name must not be blank!
 odk_form_name=Form Name:
 odk_edit_prompt=Edit Prompt
-odk_google_account=Select Google Account
-odk_selected_google_account_text=Google Account
-odk_google_submission_id_text=Google Collection Effort
 odk_exit=Exit
 odk_no_gps_title=Location Data Disabled
 odk_no_gps_message=The location providers on this device are currently disabled. Do you want to change those settings?
@@ -1167,14 +1169,9 @@ odk_intent_callout_button=Get Data
 odk_intent_callout_button_update=Update Data
 odk_finding_location=Finding Location...
 odk_found_location=Location Found!
-odk_form_entry_start_hide=Thanks! Don't show this again.
-odk_preference_form_entry_start_hide=Show Intro Help Screen
-odk_preference_form_entry_start_summary=If this is unchecked, the first screen that explains swiping will not be displayed
 odk_preference_help_mode_tray=Display Rich Help Inline
-odk_preference_progress_bar=Display Progress Bar
 odk_reset_image=Reset
 odk_save_and_close=Save and Close
 odk_sign_button=Gather Signature
 odk_markup_image=Markup Image
 odk_draw_image=Sketch Image
-odk_pref_nav_bar=Enable Navigation Bar (BETA!)
