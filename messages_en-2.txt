@@ -471,9 +471,9 @@ updates.pinned.progress=${0}/${1}
 
 install.current.version=Version currently installed: ${0}
 
-verify.title=CommCare Resource Verification
-verify.checking=Verifying Resources
-verify.progress=Verifying resources. ${0} resources verified of ${1} total
+verify.retry=Retry
+verify.checking=Verifying media...
+verify.check.failed=Validation failed for an unknown reason
 
 install.barcode.top=Welcome to CommCare!
 install.barcode.bottom=Please choose an installation method below
@@ -522,6 +522,7 @@ home.forms.saved=Saved
 home.sync=Sync with Server
 home.sync.indicator=${1} (${0})
 home.logout=Log out of CommCare
+home.report=Report an Issue
 
 home.sync.message.unsent.singular=You have 1 form which has not been submitted
 home.sync.message.unsent.plural=You have ${0} forms which have not been submitted
@@ -540,6 +541,9 @@ home.menu.saved.forms=Saved Forms
 home.menu.about=About CommCare
 
 home.developer.options.enabled=Developer Mode Enabled
+
+menu.save.session=Save Your Session
+menu.clear.saved.session=Clear Saved Session
 
 install.version.mismatch=The application requires CommCare version ${0}. You are running ${1}.
 install.major.mismatch=Please uninstall your CommCare Application from the phone Settings Menu, navigate to the marketplace, and install the proper version.
@@ -630,6 +634,9 @@ cchq.case=Case
 select.placeholder.message=Please select a ${0}
 notification.for.details.wrapper=${0} (See notification for details)
 notification.for.details.setup.wrapper=${0} (Press "See More" or see notification for details)
+
+session.refresh.error.title=Session Refresh Required
+session.refresh.error.message=Something happened that required us to refresh your session of CommCare. You should now be able to return to your prior place in the app as normal. If this happens again, contact a supervisor for assistance.
 
 app.handled.error.title=Unrecoverable Error
 app.menu.display.cond.bad.xpath=Invalid form display condition (${0}): ${1}
@@ -992,6 +999,7 @@ odk_fuzzy_match_color=\#FFE88F
 
 # *** strings.xml ***
 
+odk_about_cc=About CommCare
 odk_accept_location=Record Location
 odk_accuracy=Accuracy
 odk_activity_not_found=No activity found to handle: ${0}
@@ -1016,13 +1024,14 @@ odk_capture_audio=Record Sound
 odk_capture_image=Take Picture
 odk_capture_video=Record Video
 odk_change_language=Change Language
+odk_choose_language=Choose Language
 odk_clearanswer_confirm=Remove the response to "${0}"?
 odk_clear_answer=Remove response
 odk_clear_answer_ask=Remove This Response?
 odk_clear_answer_no=CANCEL
 odk_completed_data=Complete (${0})
 odk_data=Saved Forms
-odk_data_saved_error=Sorry, form save failed!
+odk_data_saved_error=Sorry, form save failed. Please contact technical support to look into the issue.
 odk_data_saved_ok=Form successfully saved!
 odk_delete_confirm=Delete ${0} form(s)?
 odk_delete_file=Delete Selected
@@ -1036,8 +1045,8 @@ odk_download_all_successful=All forms downloaded successfully.
 odk_download_complete=Form Get Complete
 odk_download_failed_with_error=Form "${0}" failed. ${1}.
 odk_do_not_change=Cancel
-odk_do_not_exit=Cancel
-odk_do_not_save=Ignore Changes
+odk_do_not_exit=STAY IN FORM
+odk_do_not_save=DELETE AND EXIT
 odk_enter=start
 odk_entering_repeat=Add Group
 odk_entering_repeat_ask=Add New Group?
@@ -1099,6 +1108,7 @@ odk_please_wait=Please wait a few moments.
 odk_please_wait_long=Please wait. This could take a few minutes.
 odk_quit_application=Exit ${0}
 odk_quit_entry=Save Form and Exit
+odk_quit_form_title=Exit Form?
 odk_refresh=Refresh
 odk_replace_audio=Replace Sound
 odk_replace_barcode=Replace Barcode
@@ -1136,7 +1146,7 @@ odk_first_run=Do first run on restart
 odk_client=Client
 odk_use_odk_default=Use Default Image
 odk_show_location=Show Location
-odk_keep_changes=Save Changes to Incomplete Form
+odk_keep_changes=SAVE INCOMPLETE
 odk_go_to_location=Go to Location
 odk_font_size=Text Font Size
 odk_change_font_size=Text Font Size
