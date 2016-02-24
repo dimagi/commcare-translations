@@ -453,23 +453,22 @@ option.cancel=CANCEL
 install.problem.unexpected=Unexpected install error!
 install.keep.trying=Keep trying if connection is interrupted
 updates.found=Updates found! Downloading new resource ${0} done of ${1}
-updates.success=CommCare is up to date
-updates.check.begin=Checking for updates
+updates.success=App is up to date
+updates.check.begin=Checking for updates...
 updates.check.failed=Failed to download updates
-updates.check.start=Check
+updates.check.start=Recheck
 updates.check.cancel=Stop checking
-updates.check.install=Install
 updates.check.cancelling=Cancelling check for updates
 updates.install.finished=App update was successful
-updates.check.last=Last checked for updates: ${0}
 updates.check.network_unavailable=No network connectivity
-updates.staged.version=Update to version ${0}
+updates.staged.version=Update to version ${0} & log out
+updates.staged.version.app.manager=Update to version ${0}
 updates.error=Error encountered during update download
 
 updates.pinned.download=Downloading updates
 updates.pinned.progress=${0}/${1}
 
-install.current.version=Version currently installed: ${0}
+install.current.version=Current version: ${0}
 
 verify.retry=Retry
 verify.checking=Verifying media...
@@ -481,13 +480,15 @@ install.manual=Please enter the URL
 install.ready.top=Almost there!
 install.ready.bottom=Press the button below to install your app.
 install.netwarn=If you are attempting to install from a server, make sure you have an internet connection.
-install.button.enter=Enter URL
+install.button.enter=Enter Code
 install.button.startover=Start Over
 install.button.retry=Retry Installation
 install.button.start=Start Install
 install.bad.ref=You did not scan a valid URL. Please try again.
 install.bad.login=Login to Existing App
-install.appprofile=Enter your app install address
+install.appprofile=Enter your app code
+install.perms.rationale.message=CommCare requires at least external storage read & write permissions in order to store form submissions.
+install.perms.denied.message=Crucial permissions denied ${0} times.\n\n If requesting permissions here fails, please enable permissions under Android's 'Settings -> Apps -> CommCare -> Permissions'.
 
 upgrade.button.retry=Retry Upgrade
 upgrade.button.startover=Restart Upgrade
@@ -530,15 +531,18 @@ home.sync.message.last=You last synced with the server: ${0}
 home.sync.message.last.never=never
 
 home.menu.settings=Settings
-home.menu.update=Update CommCare
-home.menu.call.log=Call Log
+home.menu.update=Update App
 home.menu.validate=Validate Media
-home.menu.change.locale=Change Language
+home.menu.locale.change=Change Language
+home.menu.locale.select=Choose your Language
 home.menu.formdump=Manage SD
 home.menu.wifi.direct=Wifi Direct
 home.menu.connection.diagnostic=Connection Test
 home.menu.saved.forms=Saved Forms
 home.menu.about=About CommCare
+home.menu.disable.analytics=Opt Out of Analytics
+home.menu.pin.set=Set My PIN
+home.menu.pin.change=Change My PIN
 
 home.developer.options.enabled=Developer Mode Enabled
 
@@ -579,11 +583,16 @@ sync.recover.started=Recovering local DB State. Please do not turn off the app!
 form.entry.segfault=There was an unrecoverable error during form entry! If the problem persists, seek technical support
 form.entry.processing=Processing your Form
 form.entry.processing.title=Processing Form
+form.entry.complete.save.success=Form successfully completed
+form.entry.incomplete.save.success=Form saved as incomplete
+form.entry.save.error=Sorry, form save failed. Please contact technical support to look into the issue.
 
 login.attempt.badcred=Username or password are incorrect. Please try again.
 
 login.username=Username
 login.password=Password
+login.pin.password=PIN
+login.primed.prompt=Your password has been saved for you! Just press 'Log In'.
 login.button=Log In
 login.sync=Synchronize with server
 login.bad.password=We couldn't find a user with this password. Please try another!
@@ -715,6 +724,7 @@ bulk.form.dump.success=${1} forms dumped successfully
 mult.install.error=Unexpected Error installing the multimedia! Please try again. Error Text: ${0}  
 
 login.menu.demo=Enter as Demo User
+login.menu.password.mode=Switch to Password Login Mode
 main.sync.demo=You cannot sync data down from the server when logged in in demo mode
 
 main.sync.demo.has.forms=Your forms have been submitted to the server; however, you cannot retrieve forms from the server in Demo mode.
@@ -728,6 +738,8 @@ home.sync.message.last.demo=You are using CommCare in demo mode
 demo.mode.warning.title=Starting Demo Mode
 demo.mode.warning=You are logging into CommCare in Demo mode. Demo mode is for testing and practice only!
 demo.mode.warning.dismiss=I Understand
+
+demo.mode.feature.unavailable=Sorry, this app uses a feature that is not available in Demo mode. Please log in as a named user.
 
 select.search.label=Search:
 select.search.status=${0} of ${1} results for your search: "${2}"
@@ -806,14 +818,44 @@ no.file.browser=Your device does not have a file browser installed. Please downl
 callout.failure.dialer=Device is not currently configured to make telephone calls
 callout.failure.sms=SMS app not found
 
+analytics.opt.out.title=Opt out of Google Analytics?
+analytics.opt.out.message=This application uses Google Analytics to anonymously track usage data within the application. If you do not want your usage data to be tracked, you can disable it at any time.
+analytics.disable.button=DISABLE
 
+remember.password.for.next.login=Remember PW For Next Login
+remember.password.confirm.title=Log out and Remember Password?
+remember.password.confirm.message=This action will log you out and allow the next login to be completed without any authentication required. Upon next login, the user will then be required to create a PIN. Do you wish to proceed?
 
+pin.dialog.prompt.set=Create a PIN?
+pin.dialog.prompt.reset=Reset your PIN?
+pin.dialog.yes=Yes, set my PIN now
+pin.dialog.not.now=No, but ask again on next login
+pin.dialog.never=No, and don't ask again
+pin.dialog.extra.info=After creating a PIN, you will be prompted to log in with that instead of your full password, on all future log-ins. If you ever forget your PIN, you can always revert to logging in with your normal password.
+pin.dialog.set.later.title=Setting A PIN Later
+pin.dialog.set.later.message=You access the PIN create screen at any time from the home screen options menu.
+pin.continue.button=CONTINUE
+pin.confirm.button=CONFIRM
+pin.directive.new=Enter a 4-digit PIN
+pin.directive.reset=Enter a new 4-digit PIN
+pin.directive.confirm=Re-Enter the PIN you chose
+pins.dont.match=Entered PINs don't match. Please try again.
+pin.set.success=PIN set successfully
+pin.not.set=No PIN was set
+pin.auth.failed.pin=Entered PIN was incorrect. Please try again.
+pin.auth.failed.password=Entered password was incorrect. Please try again.
+pin.auth.prompt.pin=Enter your current PIN
+pin.auth.prompt.password=Enter your password
+pin.auth.enter.button=ENTER
 
 
 #Put these into their own file
 
 login.attempt.fail.auth.title=Invalid Username or Password
 login.attempt.fail.auth.detail=Your username or password was not recognized, please type them again and retry.
+
+login.attempt.fail.pin.title=Invalid PIN
+login.attempt.fail.pin.detail=You entered an incorrect PIN for the given username.
 
 login.attempt.fail.changed.title=Password Changed since Last Login
 login.attempt.fail.changed.detail=You've logged in with a new password since you're last login. You may need to log in with your old credentials to ensure you have no unsent data.
@@ -887,11 +929,11 @@ notification.install.duplicate.title=This app is already installed
 notification.install.duplicate.detail=The app you are trying to install already exists on this device.
 notification.install.duplicate.action=Navigate to the drop-down menu on your log-in screen and look for the app you are attempting to install. If you still can't find the app you're looking for, contact your supervisor.
 
-notification.install.uptodate.title=CommCare is Up to Date
-notification.install.uptodate.detail=A newer version of CommCare is not available
+notification.install.uptodate.title=The App is Up to Date
+notification.install.uptodate.detail=A newer version of the app is not available
 
-notification.install.updatestaged.title=CommCare update ready to install
-notification.install.updatestaged.detail=A newer version of CommCare is ready to install on next login
+notification.install.updatestaged.title=App update ready to install
+notification.install.updatestaged.detail=A newer version of the app is ready to install on next login
 notification.install.no.connection.title=No internet connection
 notification.install.no.connection.detail=Install failed because your device is not connected to Wi-Fi currently
 notification.install.duplicate.action=Go to your device settings to check the current status of your Wi-Fi connection. If a connection is unavailable at this time, you may try offline install.
@@ -982,9 +1024,56 @@ archive.install.no.browser=You need a file manager to access the files on this d
 archive.install.prompt=Install your CommCare application from a .ccz file
 archive.install.button=Install App
 
-wifi.direct.transfer.forms=Transfer Forms
-wifi.direct.receive.forms=Receive Forms
-wifi.direct.submit.forms=Submit Forms
+wifi.direct.transfer.forms=Transfer
+wifi.direct.receive.forms=Receive
+wifi.direct.submit.forms=Submit
+wifi.direct.send.forms=Sending Forms
+wifi.direct.change.state.title=Send, Receive, Submit
+wifi.direct.change.state.text=Do you want to send, receive, or submit forms?
+wifi.direct.wifi.direct.off=WiFi Direct is Off - Please turn it on to use this feature
+wifi.direct.enter.send.mode=Entered Send Mode
+wifi.direct.enter.receive.mode=Entered Receive Mode
+wifi.direct.enter.submit.mode=Entered Submit Mode
+wifi.direct.zip.successful=Zip successful, attempting to send files...
+wifi.direct.zip.unsuccessful=Error zipping files: ${0}
+wifi.direct.zip.unzipping=Zip file exists, unzipping...
+wifi.direct.no.group=This device is not connected to any Wi-Fi Direct group.
+wifi.direct.receive.successful=Received ${0} files successfully!
+wifi.direct.send.successful=File Send Successful!
+wifi.direct.send.unsuccessful=Error sending files: ${0}
+wifi.direct.error.no.forms=Phone has received no forms via Wi-fi direct for Submitting; did you mean to Send forms?
+wifi.direct.discovery.start=Discovery Initiated
+wifi.direct.discovery.failed.generic=Discovery failed due to bad Wi-fi state; turn Wi-fi on and off, then retry
+wifi.direct.discovery.failed.specific=Discovery failed with reason code ${0}
+wifi.direct.connect.failed=Connecting failed, please retry
+wifi.direct.error.wiping.forms=Error wiping forms: ${0}
+wifi.direct.connect.success=Successfully connected to peer
+
+wifi.direct.zip.task.title=Zipping Forms...
+wifi.direct.zip.task.message=CommCare is compressing your data for transfer
+wifi.direct.unzip.task.title=Unzipping Forms...
+wifi.direct.unzip.task.message=CommCare is decompressing your forms onto your SD card
+wifi.direct.submit.task.title=Submitting Forms...
+wifi.direct.submit.task.message=CommCare is submitting your forms to the server
+wifi.direct.transfer.task.title=Sending Forms...
+wifi.direct.transfer.task.message=CommCare is sending your forms to your peer
+wifi.direct.receive.task.title=Started Receiving Files
+wifi.direct.receive.task.message=CommCare is receiving files
+wifi.direct.wipe.task.title=Wiping Forms
+wifi.direct.wipe.task.message=Cleaning up after transfer
+
+wifi.direct.status.transfer.header=You are in Transfer Form Mode
+wifi.direct.status.transfer.count=Device has ${0} unsent forms.
+wifi.direct.status.transfer.message=This will allow you to transfer forms from this device to another device via Wi-Fi Direct
+
+wifi.direct.status.receive.header=You are in Receive Form Mode
+wifi.direct.status.receive.count=Device has ${0} collected forms.
+wifi.direct.status.receive.message=This will allow you to receive forms on this device from another device via Wi-Fi Direct
+
+wifi.direct.status.submit.header=You are in Submit Form Mode
+wifi.direct.status.submit.count=Device has ${0} unsubmitted forms.
+wifi.direct.status.submit.message=This mode will allow you to submit forms to the CommCare Server if you have an internet connection.
+
 
 form.attachment.invalid=Invalid filetype choosen. Please select a valid multimedia file.
 
@@ -996,6 +1085,17 @@ image.selection.not.saved=The image you have chosen was not able to be saved pro
 
 odk_perfect_match_color=\#87D13E
 odk_fuzzy_match_color=\#FFE88F
+
+permission.all.title=CommCare Permissions
+permission.all.message=CommCare needs permissions to read/write forms to memory, call/message from the case list, and provide location data during form entry.
+permission.all.denial.message=CommCare doesn't have the necessary permissions. Please enable via 'Settings -> Apps'
+permission.case.callout.title=Permissions for calling & messaging
+permission.case.callout.message=CommCare needs call & messaging permissions to enable communication with cases.
+permission.sms.install.title=Permission for obtaining SMS app code
+permission.sms.install.message=CommCare would like to scan your recent messages for an app install code.
+permission.form.gps.title=Permission to capture location during form entry
+permission.form.gps.message=CommCare would like to capture your location and provide it to forms you complete.
+permission.acquire.required=Acquire Required Permissions
 
 # *** strings.xml ***
 
@@ -1031,8 +1131,6 @@ odk_clear_answer_ask=Remove This Response?
 odk_clear_answer_no=CANCEL
 odk_completed_data=Complete (${0})
 odk_data=Saved Forms
-odk_data_saved_error=Sorry, form save failed. Please contact technical support to look into the issue.
-odk_data_saved_ok=Form successfully saved!
 odk_delete_confirm=Delete ${0} form(s)?
 odk_delete_file=Delete Selected
 odk_delete_no=Do Not Delete
