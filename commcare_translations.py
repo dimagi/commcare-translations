@@ -54,5 +54,7 @@ def dumps(dct):
             val = u'\u00A0'
         # get rid of newlines
         val = val.replace('\n', '\\n')
+        # escape starting # character
+        val = re.sub(r'(?<!\\)#', '\#', val)
         print >> io, u"{key}={val}".format(key=key.strip(), val=val).encode('utf8')
     return unicode(io.getvalue(), encoding='utf8')
