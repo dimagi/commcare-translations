@@ -544,6 +544,7 @@ home.menu.wifi.direct=Wifi Direct
 home.menu.connection.diagnostic=Connection Test
 home.menu.saved.forms=Saved Forms
 home.menu.about=About CommCare
+home.menu.advanced=Advanced
 home.menu.disable.analytics=Opt Out of Analytics
 home.menu.pin.set=Set My PIN
 home.menu.pin.change=Change My PIN
@@ -590,6 +591,7 @@ form.entry.processing.title=Processing Form
 form.entry.complete.save.success=Form successfully completed
 form.entry.incomplete.save.success=Form saved as incomplete
 form.entry.save.error=Sorry, form save failed. Please contact technical support to look into the issue.
+form.entry.save.invalid.unicode=Could not save '${0}' text in form.
 form.entry.finish.button=FINISH
 
 login.attempt.badcred=Username or password are incorrect. Please try again.
@@ -606,6 +608,25 @@ login.welcome.multiple=Welcome back! Please select an app and log in.
 
 login.update.install.success=App update successfully applied!
 login.update.install.failure=App update failed to apply!
+
+query.button=Query
+query.dialog.title=Querying Server
+query.dialog.body=Searching server for relevant data
+query.response.format.error=Error processing server response: ${0}
+query.response.empty=Query response had no results
+post.request.button=Claim
+post.malformed.url=${0} is not a valid URL
+post.generic.error=An error occurred while preparing the HTTP request
+post.not.using.https=${0} is an invalid URL. You must use HTTPS.
+post.dialog.title=Claiming...
+post.dialog.body=Claiming chosen data from server
+post.io.error=Error reading server response: ${0}
+post.unknown.response=Received unknown resonse code (${0}) from server
+post.client.error=Client-side error (code ${0}) received from network request.
+post.server.error=Server-side error (code ${0}) received from network request.
+post.redirection.error=Network request resulted in redirection (code ${0}). Please use a non-redirecting url.
+post.gone.error=Case is not present on server.
+post.conflict.error=You have already claimed this case.
 
 version.id.long=CommCare Android, version "${0}"(${1}). App v${5}. CommCare Version ${2}. Build ${3}, built on: ${4}
 version.id.short=CCDroid:"${0}"(${1}). v${5} CC${2}b[${3}] on ${4}
@@ -743,12 +764,13 @@ home.sync.message.last.demo=You are using CommCare in demo mode
 
 demo.mode.warning.title=Starting Demo Mode
 demo.mode.warning=You are logging into CommCare in Demo mode. Demo mode is for testing and practice only!
-demo.mode.warning.dismiss=I Understand
 
 demo.mode.feature.unavailable=Sorry, this app uses a feature that is not available in Demo mode. Please log in as a named user.
 
 select.search.label=Search:
 select.search.status=${0} of ${1} results for your search: "${2}"
+select.callout.search.status=${0} of ${1} results matching callout response
+select.callout.search.invalid=Invalid callout response
 select.detail.confirm=Continue
 select.detail.bypass=Done
 select.address.show=Show Address
@@ -1137,6 +1159,7 @@ permission.form.gps.title=Permission to capture location during form entry
 permission.form.gps.message=CommCare would like to capture your location and provide it to forms you complete.
 permission.acquire.required=Acquire Required Permissions
 
+custom.acknowledgement=
 case.error.self.index=Case '${0}' cannot index itself. In order to login you must change the case on the server.
 
 intent.barcode.get=Get Barcode
@@ -1145,6 +1168,25 @@ intent.callout.get=Get Data
 intent.callout.update=Update Data
 intent.callout.cancelled=Question callout cancelled
 intent.callout.unable.to.process=Unable to process callout result
+fingerprints.scanned=Fingerprints scanned: ${0}
+
+settings.server.listing=Server Settings
+settings.server.title=CommCare > Server Settings
+settings.developer.options=Developer Options
+settings.main.title=CommCare > Application Preferences
+settings.advanced.title=CommCare > Advanced
+clear.user.data=Clear User Data
+clear.user.data.warning.title=Clear User Data
+clear.user.data.warning.message=Are you sure you want to clear all mobile user data? All unsynced data will be lost!
+force.log.submit=Force Log Submission
+recovery.mode=Recovery Mode
+
+repeat.dialog.go.back=Go Back
+repeat.dialog.leave=Do Not Add
+repeat.dialog.exit=Do Not Add. I'm Finished.
+repeat.dialog.add=Add Group
+repeat.dialog.add.another=Add another "${0}" group?
+repeat.dialog.add.new=Add a new "${0}" group?
 
 # *** strings.xml ***
 
@@ -1152,11 +1194,6 @@ odk_about_cc=About CommCare
 odk_accept_location=Record Location
 odk_accuracy=Accuracy
 odk_activity_not_found=No activity found to handle: ${0}
-odk_add_another=Add Group
-odk_add_another_repeat=Add another "${0}" group?
-odk_add_repeat=Add a new "${0}" group?
-odk_add_repeat_no=Do Not Add
-odk_add_repeat_no_exits=Do Not Add, I'm Finished
 odk_advance=forward to\nnext\nprompt
 odk_altitude=Altitude
 odk_attachment_oversized=Warning: attached large file of size ${0} kb. This could cause problems with submitting to the server depending on your network conditions.
@@ -1194,8 +1231,6 @@ odk_do_not_change=Cancel
 odk_do_not_exit=STAY IN FORM
 odk_do_not_save=EXIT WITHOUT SAVING
 odk_enter=start
-odk_entering_repeat=Add Group
-odk_entering_repeat_ask=Add New Group?
 odk_enter_data=Fill Blank Form
 odk_enter_data_button=Fill Blank Form
 odk_enter_data_description=You are at the start of "${0}". Swipe the screen as shown below to begin.
@@ -1220,9 +1255,6 @@ odk_jump_to_beginning=Go To Start
 odk_jump_to_end=Go To End
 odk_jump_to_previous=Go Up
 odk_latitude=Latitude
-odk_leave_repeat_yes=Do Not Add
-odk_leave_repeat_yes_exits=Do Not Add. I'm Finished.
-odk_repeat_go_back=Go Back
 odk_leaving_repeat=Add Group
 odk_leaving_repeat_ask=And One More Group?
 odk_list_failed_with_error=Form listing failed. ${0}.
