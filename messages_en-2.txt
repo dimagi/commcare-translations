@@ -553,6 +553,8 @@ home.developer.options.enabled=Developer Mode Enabled
 
 menu.save.session=Save Your Session
 menu.clear.saved.session=Clear Saved Session
+menu.enable.privilege=Enable Mobile Privileges
+menu.privilege.claim.disable=Disable Privileges
 
 install.version.mismatch=The application requires CommCare version ${0}. You are running ${1}.
 install.major.mismatch=Please uninstall your CommCare Application from the phone Settings Menu, navigate to the marketplace, and install the proper version.
@@ -572,7 +574,11 @@ sync.fail.bad.network=Couldn't contact server. Please make sure an internet conn
 sync.fail.server.error=The server had an error processing your data. Please try again later. If the problem persists, contact technical support.
 sync.fail.unknown=An unexpected issue occurred during sync. Please try to sync again.
 
-sync.progress.title=Communicating with Server
+sync.communicating.title=Communicating with Server
+sync.waiting.title=Waiting for Server Progress
+sync.downloading.title=Downloading Data from Server
+sync.processing.title=Processing Data from Server
+
 sync.progress.starting=Requesting Data...
 sync.progress.submitting.title=Submitting Data
 sync.progress.submitting=Sending Unsent Data to Server
@@ -580,7 +586,7 @@ sync.progress.purge=Cleaning local data
 sync.progress.authing=Contacting server for sync...
 sync.progress.downloading=Server contacted, downloading data.
 sync.process.downloading.progress=Download Progress: ${0}%
-sync.process.processing=Processing server data: ${0}/${1}
+sync.progress=Completed: ${0}/${1}
 
 sync.recover.needed=Updating phone data from server.
 sync.recover.started=Recovering local DB State. Please do not turn off the app!
@@ -615,7 +621,6 @@ query.dialog.body=Searching server for relevant data
 query.response.format.error=Error processing server response: ${0}
 query.response.empty=Query response had no results
 post.request.button=Claim
-post.malformed.url=${0} is not a valid URL
 post.generic.error=An error occurred while preparing the HTTP request
 post.not.using.https=${0} is an invalid URL. You must use HTTPS.
 post.dialog.title=Claiming...
@@ -753,6 +758,7 @@ login.menu.demo=Enter as Demo User
 login.menu.password.mode=Forgot PIN?
 
 main.sync.demo=You cannot sync data down from the server when logged in in demo mode
+login.menu.app.manager=Go To App Manager
 
 main.sync.demo.has.forms=Your forms have been submitted to the server; however, you cannot retrieve forms from the server in Demo mode.
 main.sync.demo.no.forms=You have no forms to submit and you cannot retrieve forms from the server in Demo mode. 
@@ -846,6 +852,16 @@ template.malformed.chevron=The template file set for your print job has improper
 cannot.set.template=Could not set your print template
 no.file.browser=Your device does not have a file browser installed. Please download one from the playstore and then try again.
 
+start.recording=Start Recording
+stop.recording=Stop Recording
+recording.header=Record a sound
+before.recording=Tap to start recording...
+during.recording=Tap to stop recording...
+after.recording=Recording complete.
+save=Save
+recording.prompt=Record or choose sound below...
+recording.custom=Recorded Sound
+
 #Add new localization strings here
 
 callout.failure.dialer=Device is not currently configured to make telephone calls
@@ -919,9 +935,8 @@ notification.restore.remote.error.action=Try to sync again immediately, and then
 notification.restore.nonetwork.title=Couldn't Reach Server. Please check your network connection
 notification.restore.nonetwork.detail=Couldn't reach the server due to bad network connectivity.
 
-notification.restore.nonetwork.badpass.title=Couldn't Reach Server. Please check your network connection
-notification.restore.nonetwork.badpass.detail=Couldn't reach the server due to bad network connectivity. However, this user might be able to login offline but the password is incorrect.
-notification.restore.nonetwork.badpass.action=Try re-entering your password. If this doesn't work, you will need a stronger network connection to restore this user.
+notification.restore.nonetwork.badpass.title=Either the password you entered was incorrect, or CommCare couldn't reach the server
+notification.restore.nonetwork.badpass.detail=Try re-entering your password. If this doesn't work, you will need a stronger network connection to log in with this user.
 
 notification.bad.certificate.title=Couldn't securely connect to the server. 
 notification.bad.certificate.detail=CommCare couldn't validate the security information provided by the remote server. 
@@ -1168,6 +1183,7 @@ intent.callout.get=Get Data
 intent.callout.update=Update Data
 intent.callout.cancelled=Question callout cancelled
 intent.callout.unable.to.process=Unable to process callout result
+intent.callout.activity.missing=Couldn't find intent for callout!
 fingerprints.scanned=Fingerprints scanned: ${0}
 
 settings.server.listing=Server Settings
@@ -1175,6 +1191,8 @@ settings.server.title=CommCare > Server Settings
 settings.developer.options=Developer Options
 settings.main.title=CommCare > Application Preferences
 settings.advanced.title=CommCare > Advanced
+app.manager.advanced.settings.title=App Manager > Advanced Settings
+app.manager.advanced.settings.option=Advanced
 clear.user.data=Clear User Data
 clear.user.data.warning.title=Clear User Data
 clear.user.data.warning.message=Are you sure you want to clear all mobile user data? All unsynced data will be lost!
@@ -1187,6 +1205,23 @@ repeat.dialog.exit=Do Not Add. I'm Finished.
 repeat.dialog.add=Add Group
 repeat.dialog.add.another=Add another "${0}" group?
 repeat.dialog.add.new=Add a new "${0}" group?
+lookup.table.missing.error=Unable to find lookup table "${0}". Make sure it exists and this user has access to it.
+
+ethiopian_months=Meskerem,Tikimt,Hidar,Tahsas,Tir,Yekatit,Megabit,Miazia,Ginbot,Senie,Hamlie,Nehasie,Pagumien
+nepali_months=Baishakh,Jestha,Ashadh,Shrawan,Bhadra,Ashwin,Kartik,Mangsir,Poush,Magh,Falgun,Chaitra
+
+fingerprint.match.100=★★★★★
+fingerprint.match.75=★★★★
+fingerprint.match.50=★★★
+fingerprint.match.25=★★
+fingerprint.match.0=★
+fingerprint.match.unknown=?
+
+calendar.empty.fields=Empty fields
+calendar.low.year=Year value below min value of 
+calendar.high.year=Year value above max value of ${0}
+calendar.low.day=Day value below min value of 1
+calendar.high.day=Day value above max value of ${0}
 
 # *** strings.xml ***
 
@@ -1197,6 +1232,7 @@ odk_activity_not_found=No activity found to handle: ${0}
 odk_advance=forward to\nnext\nprompt
 odk_altitude=Altitude
 odk_attachment_oversized=Warning: attached large file of size ${0} kb. This could cause problems with submitting to the server depending on your network conditions.
+odk_attachment_to_big_to_upload=Warning: media attachment is ${0} kb too large. It won't be submitted to the server!
 odk_audio_file_error=No audio file was specified.
 odk_audio_file_invalid=File: ${0} is not a valid audio file.
 odk_backup=back to\nprevious\nprompt
