@@ -64,7 +64,7 @@ question.SendNow=Send data now?
 
 view.sending.RequiredQuestion=Required question. Please answer it to continue
 
- 
+
 
 
 
@@ -163,7 +163,7 @@ user.registration.badresponse=User Registration Received, but Response Couldn't 
 command.retry=Retry
 
 
-# -- Begin Entries on March 10, 2010 to complete localizations -- 
+# -- Begin Entries on March 10, 2010 to complete localizations --
 
 command.ok=Ok
 command.back=Back
@@ -178,7 +178,7 @@ command.save=Save
 command.language=Language
 
 entity.command.sort=Sort
-entity.find=Find: 
+entity.find=Find:
 entity.nomatch=No matches
 entity.detail.title=${0} Detail
 entity.sort.title=Sort by...
@@ -187,7 +187,7 @@ entity.sort.title=Sort by...
 loading.screen.message=Loading...
 loading.screen.title=Loading
 
-#Used by chatterbox dynamically for the "name" of the xform itext locale 
+#Used by chatterbox dynamically for the "name" of the xform itext locale
 
 case.name=Name
 case.id=ID
@@ -334,7 +334,7 @@ review.type.unknown=Unknown
 
 activity.login.demomode.intro=You are starting CommCare in Demo mode. Demo mode is for testing and practice only! Log in with your user account to perform client visits.
 
-#Used by chatterbox dynamically for the "name" of the xform itext locale 
+#Used by chatterbox dynamically for the "name" of the xform itext locale
 locale.name.en=English
 locale.name.sw=Swahili
 
@@ -342,7 +342,7 @@ locale.name.sw=Swahili
 #This is the default decorator wrapped numbers in the user interface
 commcare.numwrapper=(${0})
 
-commcare.menu.count.wrapper=${0}. 
+commcare.menu.count.wrapper=${0}.
 
 commcare.noupgrade.version=The newest resources cannot be installed locally because a CommCare upgrade is required
 commcare.badversion=The application requires a newer version of CommCare than is installed. It may not work correctly. Should installation be attempted anyway?
@@ -548,6 +548,8 @@ home.menu.advanced=Advanced
 home.menu.disable.analytics=Opt Out of Analytics
 home.menu.pin.set=Set My PIN
 home.menu.pin.change=Change My PIN
+
+menu.update.from.ccz=Offline Update
 
 home.developer.options.enabled=Developer Mode Enabled
 
@@ -1088,6 +1090,8 @@ archive.install.no.browser=You need a file manager to access the files on this d
 
 archive.install.prompt=Install your CommCare application from a .ccz file
 archive.install.button=Install App
+archive.update.prompt=Update your CommCare application from a .ccz file
+archive.update.button=Update App
 
 wifi.direct.transfer.forms=Transfer
 wifi.direct.receive.forms=Receive
@@ -1232,7 +1236,7 @@ odk_activity_not_found=No activity found to handle: ${0}
 odk_advance=forward to\nnext\nprompt
 odk_altitude=Altitude
 odk_attachment_oversized=Warning: attached large file of size ${0} kb. This could cause problems with submitting to the server depending on your network conditions.
-odk_attachment_to_big_to_upload=Warning: media attachment is ${0} kb too large. It won't be submitted to the server!
+odk_attachment_above_size_limit=Media attachment too large (${0} mb). Max allowed size is ${0} mb.
 odk_audio_file_error=No audio file was specified.
 odk_audio_file_invalid=File: ${0} is not a valid audio file.
 odk_backup=back to\nprevious\nprompt
