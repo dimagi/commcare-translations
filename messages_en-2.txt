@@ -1,447 +1,3 @@
-# *** messages_default.txt ***
-
-polish.command.ok=OK
-polish.command.cancel=Cancel
-polish.command.options=Options
-polish.command.exit=Back
-polish.command.select=Select
-polish.command.mark=Mark
-polish.command.unmark=Unmark
-polish.date.select=Select Date
-# for deleting a single char:
-polish.command.delete=Delete
-# for deleting a complete TextField:
-polish.command.clear=Clear
-# for hiding menus on BlackBerry devices:
-polish.command.hide=Hide
-# for showing a default title when no label
-# is defined in a TextField. This is only
-# used when no direct input mode is activated:
-polish.title.input=Input
-# used for showing a screen for selecting symbols within TextFields:
-polish.command.entersymbol=Add Symbol
-# used by the HtmlBrowser for a links:
-polish.command.followlink=Go
-# used by the HtmlBrowser for submitting a form:
-polish.command.submit=Submit
-# used by the RssBrowser for returning to the previous page:
-polish.command.back=Back
-# RSS commands:
-polish.rss.command.select=Show
-polish.rss.command.followlink=Go
-entity.title.layout=${0} (${1})
-
-
-#Javarosa-specific
-
-plussign=/add.png
-
-splashscreen=/splash.png
-
-menu.Save=Save
-menu.Exit=Exit
-menu.Settings=Settings
-menu.SaveAndExit=Save and Exit
-menu.Next=Next
-menu.Back=Back
-menu.ViewAnswers=View Answers
-menu.SendNow=Send Now
-menu.SendLater=Send Later (Save)
-menu.SendToNewServer=Send to new server
-menu.Login=Login
-menu.Demo=Demo
-menu.Capture=Capture
-menu.retry=Retry
-
-settings.language=Language
-
-
-
-
-button.Next=Done
-
-question.SendNow=Send data now?
-
-view.sending.RequiredQuestion=Required question. Please answer it to continue
-
-
-
-
-
-form.login.username=Username:
-form.login.password=Password:
-form.login.login=Login
-
-activity.login.tryagain=Please try again
-activity.login.demomode.intro=You are starting CommCare in Demo mode. Demo mode is for testing and practice only! Log in with your user account to perform client visits.
-activity.login.loginincorrect=Login incorrect
-
-
-form.user.name=Name (ie: loginID):
-form.user.password=User Password:
-form.user.confirmpassword=Confirm Password:
-form.user.userid=User ID:
-form.user.giveadmin=Give this user admin rights?
-form.user.fillinboth =Please fill in both username and password
-
-activity.adduser.adduser=Add User
-activity.adduser.problem=Problem:
-activity.adduser.problem.nametaken=Username ${0} already taken. Please choose another username
-activity.adduser.problem.emptyuser=Username and password must both be given
-activity.adduser.problem.mismatchingpasswords=Passwords don't match
-
-activity.locationcapture.capturelocation=Capture Location
-activity.locationcapture.capturelocationhint=Capture a GPS location
-activity.locationcapture.waitingforfix=Waiting for fix...
-activity.locationcapture.fixobtained=Fix obtained!
-activity.locationcapture.fixfailed=Location capture failed.
-activity.locationcapture.readyforcapture=Ready for location capture
-activity.locationcapture.Latitude=Latitude
-activity.locationcapture.Longitude=Longitude
-activity.locationcapture.Altitude=Altitude
-activity.locationcapture.Accuracy=Accuracy
-activity.locationcapture.capturelocationhint=Use a GPS to get location
-activity.locationcapture.LocationError=Location Error
-activity.locationcapture.GPSNotAvailable=GPS Not Available
-
-
-formview.repeat.addNew=Add new repeat?
-
-
-
-
-menu.ok=OK
-
-
-
-sending.view.done.title=Finished
-sending.view.done=Form Complete, thanks!
-sending.view.submit=Submit Form
-sending.view.now=Send Now
-sending.view.later=Send Later
-sending.view.when=Send Data Now
-
-sending.status.multi=Currently sending ${0} of ${1}. Successfully transmitted ${2} of ${3}.
-sending.status.title=Send Status
-sending.status.none=No Forms to Send
-sending.status.going=Sending in Progress
-
-sending.message.send=Send Message
-message.log=Log Messages
-message.details=Show Details
-message.send.unsent=Send Unsent
-message.delete=DeleteMessage
-
-debug.log=Debug Log
-
-sending.status.failures=Some Errors Occured, ${0} forms were unsent
-sending.status.long=Submission Taking too Long
-sending.status.success=Successfully Submitted
-sending.status.failed=Submission Failed
-sending.status.error=Submission Error Unknown
-
-
-
-date.today=Today
-date.yesterday=Yesterday
-date.twoago=${0} days ago
-date.tomorrow=Tomorrow
-date.nago=${0} days ago
-date.nfromnow=${0} days from today
-
-yes=Yes
-no=No
-
-
-
-user.registration.title=User Registration
-user.registration.attempt=Contacting Server to Register User...
-user.registration.failmessage=User registration couldn't be completed, server couldn't be contacted. Retry attempt?
-user.registration.success=User Succesfully Registered!
-user.registration.badresponse=User Registration Received, but Response Couldn't be Recognized. Continue?
-
-command.retry=Retry
-
-
-# -- Begin Entries on March 10, 2010 to complete localizations --
-
-command.ok=Ok
-command.back=Back
-command.select=Select
-command.cancel=Cancel
-
-#Chatterbox commands
-command.next=Next
-command.exit=Exit
-command.saveexit=Save and Exit
-command.save=Save
-command.language=Language
-
-entity.command.sort=Sort
-entity.find=Find:
-entity.nomatch=No matches
-entity.detail.title=${0} Detail
-entity.sort.title=Sort by...
-
-
-loading.screen.message=Loading...
-loading.screen.title=Loading
-
-#Used by chatterbox dynamically for the "name" of the xform itext locale
-
-case.name=Name
-case.id=ID
-case.date.opened=Date Opened
-case.status=Currently Open
-
-button.Yes=Yes
-button.No=No
-date.unknown=unknown
-
-log.submit.url=Log Submit URL
-log.submit.never=Disable Auto-Send
-log.submit.short=Send Device Log
-log.submit.full=Send Full Diagnostic
-log.submit.nigthly=Nightly Log Format
-log.submit.weekly=Weekly Log Format
-log.submit.next.daily=Next Daily Log
-log.submit.next.weekly=Next Weekly Log
-
-user.create.header=New User
-
-sending.status.success=Successfully Submitted.
-
-user.entity.name=User
-user.entity.username=Username
-user.entity.type=Type
-user.entity.admin=Administrator
-user.entity.normal=Normal
-user.entity.demo=Demo
-user.entity.unknown=Unknown
-
-repeat.repitition=repetition
-repeat.message.single=Add ${0}?
-repeat.message.multiple=Add another ${0}?
-
-#List of two-letter->Language Mappings
-en=English
-pt=Portuguese
-es=Español
-sw=Kiswahili
-af=Afrikaans
-fra=French
-zh=Chinese
-
-#OQPS Messages
-formentry.invalid.input=Invalid Value ${0} Entered
-
-#Input keys when hacked in
-polish.TextField.charactersKey1=.,!?¿:/()@_-+1'\";
-polish.TextField.charactersKey2=abc2
-polish.TextField.charactersKey3=def3
-polish.TextField.charactersKey4=ghi4
-polish.TextField.charactersKey5=jkl5
-polish.TextField.charactersKey6=mno6
-polish.TextField.charactersKey7=pqrs7
-polish.TextField.charactersKey8=tuv8
-polish.TextField.charactersKey9=wxyz9
-polish.TextField.charactersKey0=0
-
-#User registration
-menu.send.later=Send Later
-
-video.playback.top=Press
-video.playback.bottom=For Play/Pause
-video.playback.hashkey.path=jr://resource/video_hashkey.png
-
-form.entry.constraint.msg=Answer is outside of the allowed range
-form.entry.badnum=Invalid number ${0}, cannot be converted to type ${1}
-form.entry.badnum.dec=Invalid decimal number ${0}.
-form.entry.badnum.int=Invalid integer number, ${0}. Must be between 2^-31 and 2^31. Try a long or double for this data.
-form.entry.badnum.long=Invalid long number, ${0}. Must be between 2^64 and -2^64.
-
-command.call=Call ${0}
-menu.Tools=Tools
-
-entity.nodata=No Records
-
-icon.login.path=jr://resource/login.png
-icon.demo.path=jr://resource/demo.png
-
-# *** messages_cc_default.txt ***
-
-homescreen.title=CommCare
-login.title=CommCare
-
-intro.title=CommCare Startup
-intro.text=You are starting CommCare for the first time. Do you want to restore your data from the server, or start fresh in Admin mode?
-intro.restore=Restore from Server
-intro.start=Login as Admin
-restore.finished=Done
-restore.fetch=Fetch Data
-restore.login.instructions=Enter your user details to fetch your data from the remote server
-restore.badcredentials=Incorrect Username or Password, please try again...
-restore.badserver=Bad Restore Server
-restore.message.startdownload=Attempting to contact server...
-restore.message.connectionmade=Connection made, starting download...
-restore.message.connection.failed=Connection to server failed
-restore.nocache=WARNING! Can't download file to local context, attempting to read OTA
-restore.downloaded=Data downloaded locally.
-restore.starting=Beginning data sync
-restore.success=Data sync successful
-restore.success.partial=Data sync partially successful. Some errors occurred.
-restore.fail=Errors occurred when fetching updates from server.
-restore.baddownload=Download failed, please try again.
-restore.noserveruri=No Restore Server Configured!
-restore.key.continue=User restored! Continuing...
-restore.user.exists=Cannot restore a user that is already on the phone!
-restore.bad.db=Local Database is out of sync with the server. Recovery is necessary.
-restore.recover.send=Sending current database state to server
-restore.recover.needcache=Can't recover state safely without a recovery file. Please allow file system access and try again.
-restore.recovery.wipe=Wiping old invalid casedb
-restore.recover.fail=Failed to communicate local case data when recovering! Aborting recovery.
-restore.retry=Retry
-
-sync.unsent.cancel=Cancel Sync
-sync.done.noupdate=No new updates
-sync.done.updates=Update successful
-sync.done.new=${0} new cases
-sync.done.closed=${0} cases closed
-sync.done.updated=${0} cases updated
-sync.pull.admin=Admin user can't sync data. Restore User Data to pull down a User from server
-sync.pull.demo=Demo user can't sync data. Restore User Data to pull down a User from server
-
-sync.cancelled=Sync Cancelled!
-sync.cancelled.sending=Sync Cancelled! CommCare will still try to send any unsent forms.
-
-sync.send.fail=We were unable to send your forms back to the clinic and fetch your updated follow-up list. Try again when you have better reception.
-sync.pull.fail=There was a problem and we couldn't get your new follow-ups from the clinic. Try again in five minutes. If it still doesn't work, try again when you have better reception.
-
-menu.sync=Sync with Server
-menu.sync.prompt=please update ASAP
-menu.sync.last=updated ${0} days ago
-menu.sync.unsent.one=One item to send
-menu.sync.unsent.mult=${0} items to send
-
-
-polish.date.select=Select Date
-
-commcare.review=Review Recent Forms
-review.title=Recent Forms
-review.type=Type
-review.date=Date
-review.type.unknown=Unknown
-
-activity.login.demomode.intro=You are starting CommCare in Demo mode. Demo mode is for testing and practice only! Log in with your user account to perform client visits.
-
-#Used by chatterbox dynamically for the "name" of the xform itext locale
-locale.name.en=English
-locale.name.sw=Swahili
-
-
-#This is the default decorator wrapped numbers in the user interface
-commcare.numwrapper=(${0})
-
-commcare.menu.count.wrapper=${0}.
-
-commcare.noupgrade.version=The newest resources cannot be installed locally because a CommCare upgrade is required
-commcare.badversion=The application requires a newer version of CommCare than is installed. It may not work correctly. Should installation be attempted anyway?
-commcare.fail=There was an error, and CommCare could not be started. Do you want to see the debug information?
-commcare.firstload=First start detected, loading resources...
-
-home.user.new=New User
-home.setttings=Settings
-home.user.edit=Edit Users
-home.data.restore=Restore User Data
-home.demo.reset=Reset Demo Data
-home.updates=Check for Updates
-
-#Restore Bypass Strings
-restore.bypass.start=Beginning restore from local file ${0}, bypassing OTA
-restore.bypass.clean=Attempting to clear local bypass file...
-restore.bypass.clean.success=Local bypass file deleted
-restore.bypass.cleanfail=Couldn't delete OTA bypass file. It is recommended you delete the file ${0} manually.
-restore.bypass.fail=Local Restore bypass failed. Falling back to OTA restore.
-restore.bypass.instructions=Local Restore failed. Please sign-in for OTA Restore.
-
-#Warning about time
-message.timesync=Your phone's time appears to be set incorrectly, which will cause problems in submitted data. Please set your phone to the correct date and time.
-
-menu.send.all=Send All Unsent
-menu.send.all.val=Send All Unsent (${0})
-
-sending.status.problem.datasafe=Successfully Submitted. Your data is safe, but we made a small mistake. We're working on it.
-sending.status.didnotunderstand=Did not understand the response from the server [${0}]
-home.change.user=Login as Admin
-id=ID
-
-install.verify=CommCare initialized. Validating multimedia files...
-install.bad=CommCare cannot start because you are missing ${0} images, ${1} audio clips, and ${2} videos. Ensure the files listed below are on your phone's SD card.
-
-message.permissions=CommCare has been unable to access certain permissions needed for correct functioning. Please configure the application's permissions to allow network and file system access.
-
-node.select.filtering=Filtering Cases...
-
-update.header=Updating Installation...
-update.fail.network=CommCare is having trouble reading the update files from the network. Please try again when the connection is better.
-update.fail.network.retry=CommCare is having trouble reading the update files from the network. Do you want to continue trying?
-update.fail.generic=An error occurred during the update!
-update.retrying=Continuing update attempt...
-
-commcare.fail.sendlogs=Attempt to send logs?
-
-commcare.tools.title=Tools
-commcare.tools.network=Network Test
-commcare.tools.permissions=Permissions Test
-commcare.tools.validate=Validate Media
-
-network.test.title=Network Test
-network.test.details=View Details
-network.test.details.title=Test Details
-
-network.test.begin.message=Beginning test...
-network.test.begin.image=jr://resource/nttest_begin.png
-
-network.test.connecting.message=Connecting to server for download
-network.test.connecting.image=jr://resource/nttest_start.png
-
-network.test.connected.message=Connection established, downloading data
-network.test.connected.image=jr://resource/nttest_downloading.png
-
-network.test.response.message=Response received, validating response
-
-network.test.content.message=Success!
-network.test.content.image=jr://resource/nttest_success.png
-
-network.test.failed.message=Network Test Failed. View Details to see error message
-network.test.failed.image=jr://resource/nttest_fail.png
-
-restore.ui.unbounded=Downloaded ${0} items
-restore.ui.bounded=Downloaded ${0} out of ${1} items.
-restore.fail.message=Restore failed for reasons below. Would you like to retry?
-restore.db.busy=We're still busy loading your cases and follow-ups. Please try again in five minutes.
-restore.fail.other=Failed for unknown reason: ${0}
-restore.fail.download=Download failed for reason: ${0}
-restore.fail.credentials=Bad Credentials
-restore.fail.transport=CommCare had trouble downloading your data. Error Code: ${0}
-restore.fail.view=Restore failed
-restore.fail.nointernet=You appear to not be connected to the internet. Please check your connection and hit retry.
-restore.fail.retry=An error occurred with your restore, would you like to retry?
-restore.fail.technical=An error occurred with your restore. You can retry, but likely need to contact technical support.
-
-xpath.fail.runtime=CommCare had a problem parsing your XForm. The error was: ${0}
-
-validation.start=Validating media...
-validation.success=Validation successful!
-
-server.sync.icon.normal=jr://file/commcare/images/sync_server_normal.png
-server.sync.icon.warn=jr://file/commcare/images/sync_server_warn.png
-send.unsent.icon=jr://file/commcare/images/send_unsent.png
-commcare.review.icon=jr://file/commcare/images/review_forms.png
-
-commcare.startup.oom=CommCare ran out of memory while starting your app. You can try to restart the app, but your form content may be too large for this phone. Please contact technical support if you continue to receive this message.
-commcare.install.oom=CommCare needs to restart in order to continue installing your application. Please press 'OK' and start CommCare again.
-
 # *** messages_ccodk_default.txt ***
 
 #new localizations should be added above the comment "Add new localization strings here" in this file
@@ -455,7 +11,7 @@ install.keep.trying=Keep trying if connection is interrupted
 updates.found=Updates found! Downloading new resource ${0} done of ${1}
 updates.success=App is up to date
 updates.check.begin=Checking for updates...
-updates.check.failed=Failed to download updates
+updates.check.failed=Failed to download updates. This usually means your app has a configuration issue (See notification for details)
 updates.check.start=Recheck
 updates.check.cancel=Stop checking
 updates.check.cancelling=Cancelling check for updates
@@ -756,24 +312,24 @@ bulk.form.dump.success=${1} forms dumped successfully
 
 mult.install.error=Unexpected Error installing the multimedia! Please try again. Error Text: ${0}  
 
-login.menu.demo=Enter as Demo User
+login.menu.demo=Enter Practice Mode
 login.menu.password.mode=Forgot PIN?
 
-main.sync.demo=You cannot sync data down from the server when logged in in demo mode
+main.sync.demo=You cannot sync data down from the server when using practice mode
 login.menu.app.manager=Go To App Manager
 
-main.sync.demo.has.forms=Your forms have been submitted to the server; however, you cannot retrieve forms from the server in Demo mode.
-main.sync.demo.no.forms=You have no forms to submit and you cannot retrieve forms from the server in Demo mode. 
+main.sync.demo.has.forms=Your forms have been submitted to the server; however, you cannot retrieve forms from the server in practice mode.
+main.sync.demo.no.forms=You have no forms to submit and you cannot retrieve forms from the server in practice mode.
 
-home.start.demo=Explore CommCare Demo
-home.sync.demo=Submit Demo Data to Server
-home.logout.demo=Log out of Demo Mode
-home.sync.message.last.demo=You are using CommCare in demo mode
+home.start.demo=Explore CommCare Practice Mode
+home.sync.demo=Submit Practice Data to Server
+home.logout.demo=Log out of Practice Mode
+home.sync.message.last.demo=You are using CommCare in practice mode
 
-demo.mode.warning.title=Starting Demo Mode
-demo.mode.warning=You are logging into CommCare in Demo mode. Demo mode is for testing and practice only!
+demo.mode.warning.title=Starting Practice Mode
+demo.mode.warning=You are logging into CommCare in Practice mode. Practice mode is for testing and practice only!
 
-demo.mode.feature.unavailable=Sorry, this app uses a feature that is not available in Demo mode. Please log in as a named user.
+demo.mode.feature.unavailable=Sorry, this app uses a feature that is not available in Practice mode. Please log in as a named user.
 
 select.search.label=Search:
 select.search.status=${0} of ${1} results for your search: "${2}"
@@ -966,6 +522,10 @@ notification.install.missing.title=Couldn't find your application.  Please check
 notification.install.missing.detail=A serious problem occurred while CommCare was trying to download an update (or install your app). CommCare couldn't find the resource with id: ${0}. This is often due to a bad internet connection.
 notification.install.missing.action=This failure is generally due to a bad or inconsistent network connection, but may be a sign of a problem with the application if it persists. Try again with a better connection and report to a supervisor if the install still fails.
 
+notification.install.invalid.title=A part of your application is invalid.
+notification.install.invalid.detail=CommCare found an issue with the '${0}' resource:
+notification.install.invalid.action=${0}
+
 notification.install.missing.withmessage.title=Part of your app is not valid
 notification.install.missing.withmessage.detail=One of your app's resources (${0}) is not valid and must be fixed before it can be installed.
 notification.install.missing.withmessage.action=Installation error: ${0}
@@ -1002,9 +562,10 @@ notification.install.uptodate.detail=A newer version of the app is not available
 
 notification.install.updatestaged.title=App update ready to install
 notification.install.updatestaged.detail=A newer version of the app is ready to install on next login
+
 notification.install.no.connection.title=No internet connection
 notification.install.no.connection.detail=Install failed because your device is not connected to Wi-Fi currently
-notification.install.duplicate.action=Go to your device settings to check the current status of your Wi-Fi connection. If a connection is unavailable at this time, you may try offline install.
+notification.install.no.connection.action=Go to your device settings to check the current status of your Wi-Fi connection. If a connection is unavailable at this time, you may try offline install.
 
 notification.logger.submitted.title=Device Logs Submitted
 notification.logger.submitted.detail=Your devices logs have been successfully submitted
@@ -1211,7 +772,7 @@ repeat.dialog.add.another=Add another "${0}" group?
 repeat.dialog.add.new=Add a new "${0}" group?
 lookup.table.missing.error=Unable to find lookup table "${0}". Make sure it exists and this user has access to it.
 
-ethiopian_months=Meskerem,Tikimt,Hidar,Tahsas,Tir,Yekatit,Megabit,Miazia,Ginbot,Senie,Hamlie,Nehasie,Pagumien
+ethiopian_months=Mäskäräm,T’ïk’ïmt,Hïdar,Tahsas,T’ïr,Yäkatit,Mägabit,Miyaziya,Gïnbot,Säne,Hämle,Nähäse,P’agume
 nepali_months=Baishakh,Jestha,Ashadh,Shrawan,Bhadra,Ashwin,Kartik,Mangsir,Poush,Magh,Falgun,Chaitra
 
 fingerprint.match.100=★★★★★
