@@ -754,6 +754,7 @@ odk_capture_audio=Record Sound
 odk_capture_image=Take Picture
 odk_capture_video=Record Video
 odk_change_language=Change Language
+odk_choose_language=Choose Language
 odk_clearanswer_confirm=Remove the response to "${0}"?
 odk_clear_answer=Remove response
 odk_clear_answer_ask=Remove This Response?
