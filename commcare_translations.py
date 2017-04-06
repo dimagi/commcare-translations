@@ -1,4 +1,5 @@
 from distutils.version import StrictVersion
+from os import listdir
 from os.path import join, normpath
 import re
 from StringIO import StringIO
@@ -36,7 +37,17 @@ def load_translations(lang, version=1, commcare_version=None):
         return {}
 
     paths_to_try = []
-    if commcare_version:
+    if commcare_version == 'latest':
+        files = listdir(normpath(join(__file__, "../historical-translations-by-version/")))
+        if len(files):
+            files.sort()
+            files.reverse()
+            paths_to_try.append(
+                '../historical-translations-by-version/{file}'
+                .format(file=files[0])
+            )
+            commcare_version = None
+    elif commcare_version:
         try:
             commcare_version = StrictVersion(commcare_version)
         except ValueError:
