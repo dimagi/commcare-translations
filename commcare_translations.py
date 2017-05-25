@@ -1,3 +1,5 @@
+from distutils.version import StrictVersion
+from os import listdir
 from os.path import join, normpath
 import re
 from StringIO import StringIO
@@ -24,7 +26,7 @@ def load(f):
     return messages
 
 
-def load_translations(lang, version=1):
+def load_translations(lang, version=1, commcare_version=None):
     # pt => por: hack for backwards compatibility
     if lang == 'pt':
         lang = 'por'
@@ -34,15 +36,47 @@ def load_translations(lang, version=1):
     except UnicodeEncodeError:
         return {}
 
+    paths_to_try = []
+    if commcare_version == 'latest':
+        files = listdir(normpath(join(__file__, "../historical-translations-by-version/")))
+        if len(files):
+            files.sort()
+            files.reverse()
+            paths_to_try.append(
+                '../historical-translations-by-version/{file}'
+                .format(file=files[0])
+            )
+            commcare_version = None
+    elif commcare_version:
+        try:
+            commcare_version = StrictVersion(commcare_version)
+        except ValueError:
+            commcare_version = None
+    if version == 2 and lang == 'en' and commcare_version:
+        # the earliest version we have is 2.23
+        if commcare_version < StrictVersion('2.23'):
+            commcare_version = StrictVersion('2.23')
+        major, minor, bugfix = commcare_version.version
+        while bugfix >= 0:
+            commcare_version.version = major, minor, bugfix
+            paths_to_try.append(
+                '../historical-translations-by-version/{commcare_version}-messages_{lang}-{version}.txt'
+                .format(commcare_version=commcare_version, lang=lang, version=version)
+            )
+            bugfix -= 1
+
     while version:
-        rel_path = '../messages_{lang}-{version}.txt'.format(lang=lang,
-                                                             version=version)
+        paths_to_try.append('../messages_{lang}-{version}.txt'
+                            .format(lang=lang, version=version))
+        version -= 1
+
+    for rel_path in paths_to_try:
         path = normpath(join(__file__, rel_path))
         try:
             with open(path) as f:
                 return load(f)
         except IOError:
-            version -= 1
+            pass
     return {}
 
 
