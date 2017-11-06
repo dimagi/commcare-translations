@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from distutils.version import StrictVersion
 from os import listdir
 from os.path import join, normpath
