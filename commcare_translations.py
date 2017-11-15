@@ -1,4 +1,5 @@
 from __future__ import absolute_import
+from __future__ import print_function
 from distutils.version import StrictVersion
 from os import listdir
 from os.path import join, normpath
@@ -91,5 +92,5 @@ def dumps(dct):
         val = val.replace('\n', '\\n')
         # escape starting # character
         val = re.sub(r'(?<!\\)#', '\#', val)
-        print >> io, u"{key}={val}".format(key=key.strip(), val=val).encode('utf8')
+        print(u"{key}={val}".format(key=key.strip(), val=val).encode('utf8'), file=io)
     return unicode(io.getvalue(), encoding='utf8')
