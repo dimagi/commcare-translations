@@ -5,6 +5,7 @@ from os import listdir
 from os.path import join, normpath
 import re
 from StringIO import StringIO
+import six
 
 
 def loads(s):
@@ -21,8 +22,8 @@ def load(f):
         line = re.split(r'(?<!\\)#', line)[0] # strip comments starting with '#', ignoring '\#'
         line = line.strip()
         if not line: continue
-        if not isinstance(line, unicode):
-            line = unicode(line, encoding='utf8')
+        if not isinstance(line, six.text_type):
+            line = six.text_type(line, encoding='utf8')
         i = line.index('=')
         messages[line[:i].strip()] = line[i+1:]
     return messages
@@ -93,4 +94,4 @@ def dumps(dct):
         # escape starting # character
         val = re.sub(r'(?<!\\)#', '\#', val)
         print(u"{key}={val}".format(key=key.strip(), val=val).encode('utf8'), file=io)
-    return unicode(io.getvalue(), encoding='utf8')
+    return six.text_type(io.getvalue(), encoding='utf8')
