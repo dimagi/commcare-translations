@@ -4,7 +4,7 @@ from distutils.version import StrictVersion
 from os import listdir
 from os.path import join, normpath
 import re
-from StringIO import StringIO
+from io import StringIO
 import six
 
 
@@ -93,5 +93,5 @@ def dumps(dct):
         val = val.replace('\n', '\\n')
         # escape starting # character
         val = re.sub(r'(?<!\\)#', '\#', val)
-        print(u"{key}={val}".format(key=key.strip(), val=val).encode('utf8'), file=io)
-    return six.text_type(io.getvalue(), encoding='utf8')
+        io.write(u"{key}={val}".format(key=key.strip(), val=val))
+    return io.getvalue()
