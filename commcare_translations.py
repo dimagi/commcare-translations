@@ -1,5 +1,6 @@
 from __future__ import absolute_import
 from __future__ import print_function
+from __future__ import unicode_literals
 from distutils.version import StrictVersion
 from os import listdir
 from os.path import join, normpath
@@ -88,10 +89,10 @@ def dumps(dct):
     for key, val in sorted(dct.items()):
         # replace all blanks with non-breaking spaces
         if not val.strip():
-            val = u'\u00A0'
+            val = '\u00A0'
         # get rid of newlines
         val = val.replace('\n', '\\n')
         # escape starting # character
         val = re.sub(r'(?<!\\)#', '\#', val)
-        io.write(u"{key}={val}\n".format(key=key.strip(), val=val))
+        io.write("{key}={val}\n".format(key=key.strip(), val=val))
     return io.getvalue()
