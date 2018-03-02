@@ -11,7 +11,7 @@ import six
 
 def loads(s):
     # okay this is an abstraction violation, but I wrote load(f) so I know this will work
-    f = s.split('\n')
+    f = s.split(b'\n')
     return load(f)
     
 
