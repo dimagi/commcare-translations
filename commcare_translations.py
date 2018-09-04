@@ -6,7 +6,6 @@ from os import listdir
 from os.path import join, normpath
 import re
 from io import StringIO
-import six
 from io import open
 
 
@@ -76,7 +75,7 @@ def load_translations(lang, version=1, commcare_version=None):
     for rel_path in paths_to_try:
         path = normpath(join(__file__, rel_path))
         try:
-            with open(path) as f:
+            with open(path, encoding='utf-8') as f:
                 return load(f)
         except IOError:
             pass
