@@ -12,7 +12,7 @@ from io import open
 
 def loads(s):
     # okay this is an abstraction violation, but I wrote load(f) so I know this will work
-    f = s.split(b'\n')
+    f = s.split('\n')
     return load(f)
     
 
@@ -24,8 +24,6 @@ def load(f):
         line = re.split(r'(?<!\\)#', line)[0] # strip comments starting with '#', ignoring '\#'
         line = line.strip()
         if not line: continue
-        if not isinstance(line, six.text_type):
-            line = six.text_type(line, encoding='utf8')
         i = line.index('=')
         messages[line[:i].strip()] = line[i+1:]
     return messages
@@ -78,7 +76,7 @@ def load_translations(lang, version=1, commcare_version=None):
     for rel_path in paths_to_try:
         path = normpath(join(__file__, rel_path))
         try:
-            with open(path, 'rb') as f:
+            with open(path) as f:
                 return load(f)
         except IOError:
             pass
