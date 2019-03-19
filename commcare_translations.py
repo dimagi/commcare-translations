@@ -91,6 +91,6 @@ def dumps(dct):
         # get rid of newlines
         val = val.replace('\n', '\\n')
         # escape starting # character
-        val = re.sub(r'(?<!\\)#', '\#', val)
+        val = re.sub(r'(?<!\\)#', r'\#', val)
         io.write("{key}={val}\n".format(key=key.strip(), val=val))
     return io.getvalue()
