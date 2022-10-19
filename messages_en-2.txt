@@ -1,1 +1,1 @@
-historical-translations-by-version/2.52-messages_en-2.txt
+historical-translations-by-version/2.53-messages_en-2.txt
