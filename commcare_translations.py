@@ -58,7 +58,9 @@ def load_translations(lang, version=1, commcare_version=None):
         # the earliest version we have is 2.23
         if commcare_version < LooseVersion('2.23'):
             commcare_version = LooseVersion('2.23')
-        major, minor, bugfix = commcare_version.version
+        major, *minor = commcare_version.version
+        bugfix = minor[1] if len(minor) == 2 else 0
+        minor = minor[0] if len(minor) >= 1 else 0
         while bugfix >= 0:
             commcare_version.version = major, minor, bugfix
             paths_to_try.append(
