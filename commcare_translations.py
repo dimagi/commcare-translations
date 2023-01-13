@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 from __future__ import print_function
 from __future__ import unicode_literals
-from packaging.version import Version
+from looseversion import LooseVersion
 from os import listdir
 from os.path import join, normpath
 import re
@@ -51,13 +51,13 @@ def load_translations(lang, version=1, commcare_version=None):
             commcare_version = None
     elif commcare_version:
         try:
-            commcare_version = Version(commcare_version)
+            commcare_version = LooseVersion(commcare_version)
         except ValueError:
             commcare_version = None
     if version == 2 and lang == 'en' and commcare_version:
         # the earliest version we have is 2.23
-        if commcare_version < Version('2.23'):
-            commcare_version = Version('2.23')
+        if commcare_version < LooseVersion('2.23'):
+            commcare_version = LooseVersion('2.23')
         major, minor, bugfix = commcare_version.version
         while bugfix >= 0:
             commcare_version.version = major, minor, bugfix
