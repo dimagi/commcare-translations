@@ -1,12 +1,19 @@
 from __future__ import absolute_import
 from __future__ import print_function
 from __future__ import unicode_literals
+
+from distutils.version import StrictVersion
+
 from looseversion import LooseVersion
+from packaging.version import Version, InvalidVersion
+from packaging import utils
 from os import listdir
 from os.path import join, normpath
 import re
 from io import StringIO
 from io import open
+
+
 
 
 def loads(s):
@@ -28,16 +35,7 @@ def load(f):
     return messages
 
 
-def load_translations(lang, version=1, commcare_version=None):
-    # pt => por: hack for backwards compatibility
-    if lang == 'pt':
-        lang = 'por'
-
-    try:
-        str(lang)
-    except UnicodeEncodeError:
-        return {}
-
+def get_translation_file_paths(lang, version=1, commcare_version=None):
     paths_to_try = []
     if commcare_version == 'latest':
         files = listdir(normpath(join(__file__, "../historical-translations-by-version/")))
@@ -46,7 +44,7 @@ def load_translations(lang, version=1, commcare_version=None):
             files.reverse()
             paths_to_try.append(
                 '../historical-translations-by-version/{file}'
-                .format(file=files[0])
+                    .format(file=files[0])
             )
             commcare_version = None
     elif commcare_version:
@@ -65,7 +63,7 @@ def load_translations(lang, version=1, commcare_version=None):
             commcare_version.version = major, minor, bugfix
             paths_to_try.append(
                 '../historical-translations-by-version/{commcare_version}-messages_{lang}-{version}.txt'
-                .format(commcare_version=commcare_version, lang=lang, version=version)
+                    .format(commcare_version=commcare_version, lang=lang, version=version)
             )
             bugfix -= 1
 
@@ -73,6 +71,20 @@ def load_translations(lang, version=1, commcare_version=None):
         paths_to_try.append('../messages_{lang}-{version}.txt'
                             .format(lang=lang, version=version))
         version -= 1
+    return paths_to_try
+
+
+def load_translations(lang, version=1, commcare_version=None):
+    # pt => por: hack for backwards compatibility
+    if lang == 'pt':
+        lang = 'por'
+
+    try:
+        str(lang)
+    except UnicodeEncodeError:
+        return {}
+
+    paths_to_try = get_translation_file_paths(lang, version, commcare_version)
 
     for rel_path in paths_to_try:
         path = normpath(join(__file__, rel_path))
