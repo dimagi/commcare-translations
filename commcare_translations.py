@@ -1,7 +1,8 @@
 from __future__ import absolute_import
 from __future__ import print_function
 from __future__ import unicode_literals
-from looseversion import LooseVersion
+
+from packaging.version import Version, InvalidVersion
 from os import listdir
 from os.path import join, normpath
 import re
@@ -28,6 +29,54 @@ def load(f):
     return messages
 
 
+def get_translation_file_paths(lang, version=1, commcare_version=None):
+    paths_to_try = []
+    if commcare_version == 'latest':
+        files = listdir(normpath(join(__file__, "../historical-translations-by-version/")))
+        if len(files):
+            files.sort()
+            files.reverse()
+            paths_to_try.append(
+                '../historical-translations-by-version/{file}'
+                    .format(file=files[0])
+            )
+            commcare_version = None
+
+    elif commcare_version:
+        try:
+            commcare_version = Version(commcare_version)
+        except InvalidVersion:
+            commcare_version = None
+    if version == 2 and lang == 'en' and commcare_version:
+        # the earliest version we have is 2.23
+        if commcare_version < Version('2.23'):
+            commcare_version = Version('2.23')
+        major, *minor = commcare_version.release
+        bugfix = minor[1] if len(minor) == 2 else 0
+        minor = minor[0] if len(minor) >= 1 else 0
+        while bugfix >= 0:
+            new_version = (
+                '{}.{}.{}'.format(major, minor, bugfix) if bugfix > 0
+                else '{}.{}'.format(major, minor)
+            )
+            commcare_version = Version(new_version)
+            paths_to_try.append(
+                '../historical-translations-by-version/{commcare_version}-'
+                'messages_{lang}-{version}.txt'.format(
+                    commcare_version=commcare_version,
+                    lang=lang,
+                    version=version,
+                )
+            )
+            bugfix -= 1
+
+    while version:
+        paths_to_try.append('../messages_{lang}-{version}.txt'
+                            .format(lang=lang, version=version))
+        version -= 1
+    return paths_to_try
+
+
 def load_translations(lang, version=1, commcare_version=None):
     # pt => por: hack for backwards compatibility
     if lang == 'pt':
@@ -38,41 +87,7 @@ def load_translations(lang, version=1, commcare_version=None):
     except UnicodeEncodeError:
         return {}
 
-    paths_to_try = []
-    if commcare_version == 'latest':
-        files = listdir(normpath(join(__file__, "../historical-translations-by-version/")))
-        if len(files):
-            files.sort()
-            files.reverse()
-            paths_to_try.append(
-                '../historical-translations-by-version/{file}'
-                .format(file=files[0])
-            )
-            commcare_version = None
-    elif commcare_version:
-        try:
-            commcare_version = LooseVersion(commcare_version)
-        except ValueError:
-            commcare_version = None
-    if version == 2 and lang == 'en' and commcare_version:
-        # the earliest version we have is 2.23
-        if commcare_version < LooseVersion('2.23'):
-            commcare_version = LooseVersion('2.23')
-        major, *minor = commcare_version.version
-        bugfix = minor[1] if len(minor) == 2 else 0
-        minor = minor[0] if len(minor) >= 1 else 0
-        while bugfix >= 0:
-            commcare_version.version = major, minor, bugfix
-            paths_to_try.append(
-                '../historical-translations-by-version/{commcare_version}-messages_{lang}-{version}.txt'
-                .format(commcare_version=commcare_version, lang=lang, version=version)
-            )
-            bugfix -= 1
-
-    while version:
-        paths_to_try.append('../messages_{lang}-{version}.txt'
-                            .format(lang=lang, version=version))
-        version -= 1
+    paths_to_try = get_translation_file_paths(lang, version, commcare_version)
 
     for rel_path in paths_to_try:
         path = normpath(join(__file__, rel_path))
