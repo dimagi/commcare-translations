@@ -51,9 +51,9 @@ def get_translation_file_paths(lang, version=1, commcare_version=None):
         # the earliest version we have is 2.23
         if commcare_version < Version('2.23'):
             commcare_version = Version('2.23')
-        major, *minor = commcare_version.release
-        bugfix = minor[1] if len(minor) == 2 else 0
-        minor = minor[0] if len(minor) >= 1 else 0
+        major = commcare_version.major
+        minor = commcare_version.minor
+        bugfix = commcare_version.micro
         while bugfix >= 0:
             new_version = (
                 '{}.{}.{}'.format(major, minor, bugfix) if bugfix > 0
