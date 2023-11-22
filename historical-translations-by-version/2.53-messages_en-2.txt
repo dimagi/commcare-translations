@@ -459,6 +459,8 @@ recording.prompt.with.file.chooser=Record or choose sound below
 recording.prompt.without.file.chooser=Record sound below
 recording.custom=Recorded Sound
 
+upload.clear.title=Clear
+
 callout.failure.dialer=Device is not currently configured to make telephone calls
 callout.failure.sms=SMS app not found
 callout.missing=No application found for action: ${0}
