@@ -3,6 +3,6 @@ This repository stores translations for all the text strings that appear in Comm
 The translations for language with language code "xy" should be in a file named "messages_xy.txt".
 
 Mobile translations are stored in the following places.
-When adding translations you can find the default values that should be used here: [CommCare Android strings](https://github.com/dimagi/commcare-android/blob/master/app/assets/locales/android_translatable_strings.txt)
+When adding translations, you can find the default values that should be used in [CommCare Android strings](https://github.com/dimagi/commcare-android/blob/master/app/assets/locales/android_translatable_strings.txt)
 
-These translations are genenrally updated when doing a major CommCare-Android release by [mobile deploy scripts](https://github.com/dimagi/mobile-deploy/blob/master/update_translations.py). 
+These translations are usually updated when doing a major CommCare-Android release by [mobile deploy scripts](https://github.com/dimagi/mobile-deploy/blob/master/update_translations.py)
